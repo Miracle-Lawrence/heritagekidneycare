@@ -36,7 +36,8 @@ body {
   position: relative;
   text-decoration: none;
   color: #333;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 0.9rem;
   padding: 8px 0;
   transition: color 0.3s ease;
 }
@@ -61,7 +62,6 @@ body {
   padding: 10px 0;
   border-radius: 6px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -80,7 +80,8 @@ body {
   display: block;
   padding: 10px 20px;
   color: #333;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 0.8rem;
   text-decoration: none;
   white-space: nowrap;
   transition: background 0.3s ease, color 0.3s ease;
@@ -122,22 +123,28 @@ body {
 /* =========================
    MOBILE MENU
 ========================= */
+/* =========================
+   MOBILE MENU (RIGHT SIDE)
+========================= */
+
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: -100%;
-  width: 250px;
-  height: 100%;
+  right: -100%;        
+  width: 260px;         
+  max-height: 80vh;     
   background-color: #d60000;
   color: #fff;
   padding: 20px;
-  transition: left 0.3s ease;
-  display: flex;
-  flex-direction: column;
+  transition: right 0.3s ease;
+  border-radius: 0 0 0 20px; 
+  overflow-y: auto;    
+  box-shadow: -5px 0 20px rgba(0,0,0,0.15); 
 }
 
+/* When Open */
 .mobile-menu.open {
-  left: 0;
+  right: 0;
 }
 
 .menu-header {
@@ -148,7 +155,7 @@ body {
 .close-btn {
   background: none;
   border: none;
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: #fff;
   cursor: pointer;
 }
@@ -169,10 +176,36 @@ body {
 .menu-list a {
   display: block;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 0.9rem;
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.25s ease;
+
+  z-index: 9; 
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu {
+  z-index: 10; /* ABOVE overlay */
 }
 
 /* Expandable Menu Layout */
@@ -185,7 +218,7 @@ body {
 
 .toggle {
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   padding-left: 10px;
 }
@@ -204,7 +237,7 @@ body {
 }
 
 .submenu a {
-  font-size: 14px;
+  font-size: 0.8rem;
   padding: 8px 0;
   opacity: 0.9;
 }
@@ -213,9 +246,9 @@ body {
 .appointment {
   background-color: #fff;
   color: #d60000 !important;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 700 !important;
 }
 
 /* Search Bar */
@@ -239,6 +272,147 @@ body {
   cursor: pointer;
 }
 
+.search-icon {
+  font-size: 1.8rem;   
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   DESKTOP SEARCH 
+========================= */
+
+.desktop-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Search Icon */
+.desktop-search .search-icon {
+  font-size: 1.9rem;
+  cursor: pointer;
+  padding: 8px 10px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.desktop-search .search-icon:hover {
+  transform: scale(1.1);
+  color: #d60000;
+}
+
+/* Search Box */
+.desktop-search .search-box {
+  position: absolute;
+  top: 55px;
+  right: 0;
+
+  width: 320px; /* Bigger width */
+  background: #ffffff;
+
+  padding: 15px;
+  border-radius: 14px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  display: none;
+  z-index: 50;
+
+  animation: fadeIn 0.2s ease;
+}
+
+/* Show search */
+.desktop-search .search-box.active {
+  display: block;
+}
+
+/* Input Field */
+.desktop-search .search-input {
+  width: 100%;
+  padding: 12px 14px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-size: 14px;
+  outline: none;
+
+  transition: border 0.2s ease;
+}
+
+.desktop-search .search-input:focus {
+  border: 1px solid #d60000;
+}
+
+/* Results */
+.desktop-search .search-results {
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.desktop-search .search-results a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+
+  transition: color 0.2s ease;
+}
+
+.desktop-search .search-results a:hover {
+  color: #d60000;
+}
+
+/* Smooth Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   MOBILE SEARCH
+========================= */
+
+.mobile-search {
+  margin-top: 20px;
+}
+
+.mobile-search input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.mobile-search-results a {
+  display: block;
+  padding: 6px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.mobile-search-results a:hover {
+  opacity: 0.7;
+}
+
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -259,4 +433,15 @@ body {
   .hamburger {
     display: block;
   }
+  .appointment {
+    background: none !important;
+    color: #fff !important;
+    padding: 10px 0;
+    font-weight: 600;
+  }
+
+  .appointment:hover {
+    opacity: 0.8;
+  }
+
 }

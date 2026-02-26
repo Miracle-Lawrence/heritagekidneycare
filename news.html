@@ -83,7 +83,14 @@
         <a href="career.html">Career</a>
         <a href="contact.html">Contact Us</a>
         <button class="cta">Request Appointment</button>
-        <div class="search-icon">🔍</div>
+        <div class="desktop-search">
+            <div class="search-icon">⌕</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search..." class="search-input" />
+                <div class="search-results"></div>
+            </div>
+        </div>
         <div class="hamburger">☰</div>
       </nav>
     </header>
@@ -95,7 +102,10 @@
       <ul class="menu-list">
         <li><a href="index.html">Home</a></li>
         <li class="expandable">
-          <a href="about.html">About Us <span class="toggle">+</span></a>
+            <div class="menu-link">
+                <a href="about.html">About Us</a>
+                <span class="toggle">+</span>
+            </div>
           <ul class="submenu">
             <li><a href="facilities.html">Facilities</a></li> 
             <li><a href="routine.html">Routine Processes</a></li>
@@ -109,7 +119,10 @@
           </ul>
         </li>
         <li class="expandable">
-          <a href="services.html">Services <span class="toggle">+</span></a>
+            <div class="menu-link">
+                <a href="services.html">Services</a>
+                <span class="toggle">+</span>
+            </div>
           <ul class="submenu">
             <li><a href="surgery.html">Surgery</a></li>
             <li><a href="diagnostics.html">Diagnostics</a></li>
@@ -123,9 +136,11 @@
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="appointment.html" class="appointment">Request Appointment</a></li>
       </ul>
-      <div class="search-bar">
-        <input type="text" placeholder="Search..." /> <button>🔍</button>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search..." class="mobile-search-input" />
+        <div class="mobile-search-results"></div>
       </div>
-    </div>
+      </div>
+    <div class="menu-overlay"></div>
   </body>
 </html>

@@ -84,7 +84,14 @@
         <a href="career.html">Career</a>
         <a href="contact.html">Contact Us</a>
         <button class="cta">Request Appointment</button>
-        <div class="search-icon">🔍</div>
+        <div class="desktop-search">
+            <div class="search-icon">⌕</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search..." class="search-input" />
+                <div class="search-results"></div>
+            </div>
+        </div>
         <div class="hamburger">☰</div>
       </nav>
     </header>
@@ -130,9 +137,11 @@
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="appointment.html" class="appointment">Request Appointment</a></li>
       </ul>
-      <div class="search-bar">
-        <input type="text" placeholder="Search..." /> <button>🔍</button>
+      <div class="mobile-search">
+        <input type="text" placeholder="Search..." class="mobile-search-input" />
+        <div class="mobile-search-results"></div>
       </div>
-    </div>
+      </div>
+    <div class="menu-overlay"></div>
   </body>
 </html>

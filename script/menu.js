@@ -1,5 +1,52 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Toggle expandable sections
+  /* =====================================================
+     GLOBAL PAGES (USED FOR BOTH DESKTOP & MOBILE SEARCH)
+  ====================================================== */
+
+  const sitePages = [
+    { name: "Home", url: "index.html" },
+    { name: "About Us", url: "about.html" },
+    { name: "Facilities", url: "facilities.html" },
+    { name: "Routine Processes", url: "routine.html" },
+    { name: "Milestones", url: "milestones.html" },
+    { name: "Patient Registration", url: "registration.html" },
+    { name: "Insurance", url: "insurance.html" },
+    { name: "Team", url: "team.html" },
+    { name: "Research", url: "research.html" },
+    { name: "Testimonials", url: "testimonial.html" },
+    { name: "Surgery", url: "surgery.html" },
+    { name: "Diagnostics", url: "diagnostics.html" },
+    { name: "Dialysis", url: "dialysis.html" },
+    { name: "Technology", url: "technology.html" },
+  ];
+
+  /* =====================================================
+     MOBILE MENU
+  ====================================================== */
+
+  const menu = document.querySelector(".mobile-menu");
+  const overlay = document.querySelector(".menu-overlay");
+  const hamburger = document.querySelector(".hamburger");
+  const closeBtn = document.querySelector(".close-btn");
+
+  if (!menu || !hamburger) return;
+
+  /* Open Menu */
+  hamburger.addEventListener("click", function () {
+    menu.classList.add("open");
+    overlay?.classList.add("active");
+  });
+
+  /* Close Menu */
+  function closeMenu() {
+    menu.classList.remove("open");
+    overlay?.classList.remove("active");
+  }
+
+  closeBtn?.addEventListener("click", closeMenu);
+  overlay?.addEventListener("click", closeMenu);
+
+  /* Toggle Submenus */
   document.querySelectorAll(".expandable .toggle").forEach((toggle) => {
     toggle.addEventListener("click", function (e) {
       e.preventDefault();
@@ -9,18 +56,101 @@ document.addEventListener("DOMContentLoaded", function () {
       const submenu = parent.querySelector(".submenu");
 
       submenu.classList.toggle("open");
-
       this.textContent = submenu.classList.contains("open") ? "−" : "+";
     });
   });
 
-  // Open mobile menu
-  document.querySelector(".hamburger").addEventListener("click", () => {
-    document.querySelector(".mobile-menu").classList.add("open");
-  });
+  /* =====================================================
+     DESKTOP SEARCH
+  ====================================================== */
 
-  // Close mobile menu
-  document.querySelector(".close-btn").addEventListener("click", () => {
-    document.querySelector(".mobile-menu").classList.remove("open");
-  });
+  const desktopSearch = document.querySelector(".desktop-search");
+  const desktopIcon = document.querySelector(".desktop-search .search-icon");
+  const desktopBox = document.querySelector(".desktop-search .search-box");
+  const desktopInput = document.querySelector(".desktop-search .search-input");
+  const desktopResults = document.querySelector(
+    ".desktop-search .search-results",
+  );
+
+  if (
+    desktopSearch &&
+    desktopIcon &&
+    desktopBox &&
+    desktopInput &&
+    desktopResults
+  ) {
+    /* Toggle Search Box */
+    desktopIcon.addEventListener("click", function (e) {
+      e.stopPropagation();
+      desktopBox.classList.toggle("active");
+      desktopInput.focus();
+    });
+
+    /* Live Search */
+    desktopInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      desktopResults.innerHTML = "";
+
+      if (!query) return;
+
+      const filtered = sitePages.filter((page) =>
+        page.name.toLowerCase().includes(query),
+      );
+
+      filtered.forEach((page) => {
+        const link = document.createElement("a");
+        link.href = page.url;
+        link.textContent = page.name;
+        desktopResults.appendChild(link);
+      });
+    });
+
+    /* Press Enter to Redirect */
+    desktopInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const query = this.value.toLowerCase();
+        const match = sitePages.find((page) =>
+          page.name.toLowerCase().includes(query),
+        );
+
+        if (match) {
+          window.location.href = match.url;
+        }
+      }
+    });
+
+    /* Close When Clicking Outside */
+    document.addEventListener("click", function (e) {
+      if (!desktopSearch.contains(e.target)) {
+        desktopBox.classList.remove("active");
+      }
+    });
+  }
+
+  /* =====================================================
+     MOBILE SEARCH
+  ====================================================== */
+
+  const mobileInput = document.querySelector(".mobile-search-input");
+  const mobileResults = document.querySelector(".mobile-search-results");
+
+  if (mobileInput && mobileResults) {
+    mobileInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      mobileResults.innerHTML = "";
+
+      if (!query) return;
+
+      const filtered = sitePages.filter((page) =>
+        page.name.toLowerCase().includes(query),
+      );
+
+      filtered.forEach((page) => {
+        const link = document.createElement("a");
+        link.href = page.url;
+        link.textContent = page.name;
+        mobileResults.appendChild(link);
+      });
+    });
+  }
 });
