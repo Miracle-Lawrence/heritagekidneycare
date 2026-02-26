@@ -1,3 +1,9 @@
+:root {
+  --color-dark-red: #770000;   
+  --color-olive-green: #5a8500; 
+  --color-dark-blue: #010891;   
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -29,6 +35,44 @@ body {
   gap: 25px;
   align-items: center;
 }
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #010891; /* Default color */
+  font-weight: 300; /* Light */
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+/* Animated underline on hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #770000; /* underline color */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Active page underline */
+.nav-links a.current::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Optional: active page color change */
+.nav-links a.current {
+  color: var(--color-dark-red);
+}
 
 /* Main Links */
 .nav-links > a,
@@ -44,7 +88,7 @@ body {
 
 .nav-links > a:hover,
 .nav-item > a:hover {
-  color: #d60000;
+  color: var(--color-dark-red)
 }
 
 /* Dropdown Container */
@@ -89,12 +133,12 @@ body {
 
 .dropdown a:hover {
   background-color: #f5f5f5;
-  color: #d60000;
+  color: var(--color-dark-red);
 }
 
 /* CTA Button */
 .cta {
-  background-color: #d60000;
+  background-color: var(--color-dark-red);
   color: #fff;
   padding: 8px 15px;
   border: none;
@@ -133,7 +177,7 @@ body {
   right: -100%;        
   width: 260px;         
   max-height: 80vh;     
-  background-color: #d60000;
+  background-color: var(--color-dark-red);
   color: #fff;
   padding: 20px;
   transition: right 0.3s ease;
@@ -245,7 +289,7 @@ body {
 /* Appointment Button */
 .appointment {
   background-color: #fff;
-  color: #d60000 !important;
+  color: var(--color-dark-red) !important;
   padding: 10px 14px;
   border-radius: 4px;
   font-weight: 700 !important;
@@ -305,7 +349,7 @@ body {
 
 .desktop-search .search-icon:hover {
   transform: scale(1.1);
-  color: #d60000;
+  color: var(--color-dark-red);
 }
 
 /* Search Box */
@@ -348,7 +392,7 @@ body {
 }
 
 .desktop-search .search-input:focus {
-  border: 1px solid #d60000;
+  border: 1px solid var(--color-dark-red);
 }
 
 /* Results */
@@ -369,7 +413,7 @@ body {
 }
 
 .desktop-search .search-results a:hover {
-  color: #d60000;
+  color: var(--color-dark-red);
 }
 
 /* Smooth Animation */
@@ -414,6 +458,125 @@ body {
 
 
 /* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* SLIDER */
+.hero-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.15);
+  transition: opacity 1.5s ease, transform 6s ease;
+}
+
+.hero-bg.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* BLENDED LEFT SIDE OVERLAY */
+.hero-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  /* subtle blend */
+  backdrop-filter: blur(3px);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 40%,
+    rgba(0, 0, 0, 0.1) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* CONTENT */
+.hero-content {
+  color: white;
+  max-width: 480px;
+  margin-left: 50px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 18px;
+  line-height: 4rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS STACKED (Smaller + Cleaner) */
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+  background: #770000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 4px;
+  width: fit-content;
+  transition: 0.3s ease;
+}
+
+.btn.primary:hover {
+  background: #5a0000;
+}
+
+/* SECONDARY BUTTON */
+.btn.secondary {
+  border: 1.5px solid #770000;
+  color: #770000;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background: transparent;
+  width: fit-content;
+  transition: 0.3s ease;
+}
+
+.btn.secondary:hover {
+  background: #770000;
+  color: white;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 1024px) {
@@ -444,4 +607,48 @@ body {
     opacity: 0.8;
   }
 
+  .hero {
+    min-height: 50vh;
+    padding: 60px 0;
+  }
+
+  .hero-overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-slider,
+  .hero-bg {
+    height: 100%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+      margin-left: 0;
+      margin-right: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    gap: 10px;
+  }
+
+  .btn.primary,
+  .btn.secondary {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 }
