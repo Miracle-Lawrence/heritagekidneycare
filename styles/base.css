@@ -31,7 +31,7 @@ body {
 }
 
 .logo img:last-of-type {
-  width: 300px;
+  width: 200px;
   min-width: 50px;
   height: auto;
 }
@@ -177,7 +177,7 @@ body {
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-links a,
   .nav-item,
   .cta,
@@ -187,17 +187,25 @@ body {
   .hamburger {
     display: block;
   }
-  .logo img {
+  .logo {
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
   display: block;
   width: 100%;
   height: auto;
-  padding-left: 0;
+  padding-top: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo img:last-of-type {
   width: 200px;
-  min-width:200px;
+  min-width: 50px;
   height: auto;
 }
+
 }
 
