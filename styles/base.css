@@ -514,30 +514,20 @@ body {
   top: 0;
   width: 45%;
   height: 100%;
-
   display: flex;
   align-items: center;
-  padding: 10px;
-
-  /* subtle blend */
-  backdrop-filter: blur(3px);
+  padding: 10px; 
   background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.35) 40%,
-    rgba(0, 0, 0, 0.1) 75%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  to right,
+  rgba(255, 255, 255, 0.95) 0%,
+  rgba(255, 255, 255, 0.75) 55%,
+  rgba(255, 255, 255, 0.35) 75%,
+  rgba(255, 255, 255, 0) 95%
+);
+  background-blend-mode: overlay;
 }
 
 /* CONTENT */
-.hero-overlay {
-    width: 50%;                 /* slightly wider blur panel */
-    padding-left: 150px;        /* move away from left edge */
-    padding-right: 60px;
-    display: flex;
-    align-items: center;        /* vertical centering */
-  }
 
   .hero-content {
     width: 100%;
@@ -545,14 +535,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 70px;
   }
 
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 300;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   line-height: 4rem;
-  color: white;
+  color: var(--color-dark-red);
 }
 
 .hero-content p {
@@ -560,7 +551,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 30px;
-  color: white;
+  color: black;
 }
 
 /* BUTTONS STACKED (Smaller + Cleaner) */
@@ -581,6 +572,7 @@ body {
   border-radius: 4px;
   width: fit-content;
   transition: 0.3s ease;
+  font-weight: 600;
 }
 
 .btn.primary:hover {
@@ -590,7 +582,7 @@ body {
 /* SECONDARY BUTTON */
 .btn.secondary {
   border: 1.5px solid #770000;
-  color: white;
+  color: black;
   padding: 20px 40px;
   font-size: 0.8rem;
   text-decoration: none;
@@ -598,6 +590,7 @@ body {
   background: transparent;
   width: fit-content;
   transition: 0.3s ease;
+  font-weight: 600;
 }
 
 .btn.secondary:hover {
@@ -678,15 +671,14 @@ body {
     display: flex;
     align-items: center;   /* vertical centering */
 
-    backdrop-filter: blur(5px);
-
     background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.45) 40%,
-      rgba(0, 0, 0, 0.15) 75%,
-      rgba(0, 0, 0, 0) 100%
-    );
+  to right,
+  rgba(255, 255, 255, 0.95) 0%,
+  rgba(255, 255, 255, 0.75) 55%,
+  rgba(255, 255, 255, 0.35) 75%,
+  rgba(255, 255, 255, 0) 95%
+);
+  background-blend-mode: overlay;
   }
 
   /* Proper content spacing */
@@ -706,13 +698,14 @@ body {
     line-height: 1.3;
     margin-bottom: 18px;
     font-weight: 300;
-    color: white;
+    color: var(--color-dark-red);
   }
 
   .hero-content p {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 25px;
+    color: black;
   }
 
   .hero-buttons {
