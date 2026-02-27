@@ -483,7 +483,6 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
-  
 }
 
 /* SLIDER */
@@ -553,7 +552,7 @@ body {
   font-weight: 300;
   margin-bottom: 18px;
   line-height: 4rem;
-  color: var(--color-dark-red);
+  color: white;
 }
 
 .hero-content p {
