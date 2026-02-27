@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   background-color: #ffffff;
   padding: 10px 10px 10px 0;
-  height: 80px;
+  height: 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -92,9 +92,12 @@ body {
 }
 
 /* Dropdown Container */
+
 .nav-item {
   position: relative;
+  z-index: 1000; /* keeps dropdown above hero */
 }
+
 
 /* Dropdown Styling */
 .dropdown {
@@ -110,6 +113,8 @@ body {
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.3s ease;
+  position: absolute;
+  z-index: 9999;
 }
 
 /* Show dropdown on hover */
@@ -159,10 +164,22 @@ body {
 }
 
 .hamburger {
-  display: none;
-  font-size: 2em;
+  display: flex;
+  align-items: center;
+  gap: 6px;              
+  font-size: 0.8rem;
   cursor: pointer;
 }
+
+.menu-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.9rem; 
+  color: #333;
+  padding-right: 10px;
+}
+
 
 /* =========================
    MOBILE MENU
@@ -515,17 +532,28 @@ body {
 }
 
 /* CONTENT */
-.hero-content {
-  color: white;
-  max-width: 480px;
-  margin-left: 50px;
-}
+.hero-overlay {
+    width: 50%;                 /* slightly wider blur panel */
+    padding-left: 150px;        /* move away from left edge */
+    padding-right: 60px;
+    display: flex;
+    align-items: center;        /* vertical centering */
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 80px 0;            /* equal top & bottom spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 18px;
   line-height: 4rem;
+  color: var(--color-dark-red);
 }
 
 .hero-content p {
@@ -533,21 +561,23 @@ body {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 30px;
+  color: white;
 }
 
 /* BUTTONS STACKED (Smaller + Cleaner) */
 .hero-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    gap: 20px;             
 }
 
 /* PRIMARY BUTTON */
 .btn.primary {
   background: #770000;
   color: white;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  padding: 20px 40px;
+  font-size: 0.8rem;
   text-decoration: none;
   border-radius: 4px;
   width: fit-content;
@@ -561,9 +591,9 @@ body {
 /* SECONDARY BUTTON */
 .btn.secondary {
   border: 1.5px solid #770000;
-  color: #770000;
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  color: white;
+  padding: 20px 40px;
+  font-size: 0.8rem;
   text-decoration: none;
   border-radius: 4px;
   background: transparent;
@@ -576,6 +606,24 @@ body {
   color: white;
 }
 
+@keyframes buttonPop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation on hover */
+.btn.primary:hover,
+.btn.secondary:hover {
+  animation: buttonPop 0.6s ease-in-out infinite;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -583,6 +631,7 @@ body {
   .nav-links {
     gap: 15px;
   }
+  
 }
 
 @media (max-width: 900px) {
@@ -592,8 +641,8 @@ body {
   .search-icon {
     display: none;
   }
-
-  .hamburger {
+  
+    .hamburger {
     display: block;
   }
   .appointment {
@@ -607,18 +656,10 @@ body {
     opacity: 0.8;
   }
 
+  /* Taller hero */
   .hero {
-    min-height: 50vh;
-    padding: 60px 0;
-  }
-
-  .hero-overlay {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 40px 20px;
-    backdrop-filter: blur(8px);
-    background: rgba(0, 0, 0, 0.6);
+    height: 70vh;          /* taller but not full 100vh */
+    min-height: 520px;     /* ensures proper breathing space */
   }
 
   .hero-slider,
@@ -626,20 +667,53 @@ body {
     height: 100%;
   }
 
+  /* Blur panel */
+  .hero-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+
+    padding: 0 20px;       /* remove vertical padding */
+    display: flex;
+    align-items: center;   /* vertical centering */
+
+    backdrop-filter: blur(5px);
+
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.45) 40%,
+      rgba(0, 0, 0, 0.15) 75%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  /* Proper content spacing */
   .hero-content {
-    max-width: 100%;
-      margin-left: 0;
-      margin-right: 12px;
+    width: 90vw;
+    max-width: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    padding: 80px 0;   /* equal top & bottom spacing */
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 30px;
     line-height: 1.3;
+    margin-bottom: 18px;
+    font-weight: 300;
+    color: var(--color-dark-red);
   }
 
   .hero-content p {
     font-size: 14px;
     line-height: 1.6;
+    margin-bottom: 25px;
   }
 
   .hero-buttons {
@@ -649,6 +723,15 @@ body {
   .btn.primary,
   .btn.secondary {
     font-size: 13px;
-    padding: 8px 16px;
+    padding: 15px 35px;
   }
+}
+
+@media (min-width: 901px) {
+  .menu-text {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+}
 }
