@@ -671,13 +671,14 @@ body {
     display: flex;
     align-items: center;   /* vertical centering */
 
-    background: linear-gradient(
+   background: linear-gradient(
   to right,
-  rgba(255, 255, 255, 0.95) 0%,
-  rgba(255, 255, 255, 0.8) 40%,
-  rgba(255, 255, 255, 0.45) 60%,
-  rgba(255, 255, 255, 0.15) 75%,
-  rgba(255, 255, 255, 0) 105%
+  rgba(255, 255, 255, 0.97) 0%,
+  rgba(255, 255, 255, 0.9) 35%,
+  rgba(255, 255, 255, 0.75) 55%,
+  rgba(255, 255, 255, 0.5) 75%,
+  rgba(255, 255, 255, 0.25) 90%,
+  rgba(255, 255, 255, 0) 100%
 );
   background-blend-mode: overlay;
   }
