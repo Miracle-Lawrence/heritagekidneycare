@@ -94,3 +94,56 @@ services.forEach(service => {
   service.style.transform = 'translateY(20px)';
   observer.observe(service);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const animatedSections = document.querySelectorAll(".section-animate");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target); // animate once only
+
+      }
+
+    });
+
+  }, {
+    threshold: 0.25
+  });
+
+  animatedSections.forEach(section => {
+    observer.observe(section);
+  });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const animatedSections = document.querySelectorAll(".section-animate");
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active"); 
+      }
+
+    });
+
+  }, {
+    threshold: 0.25
+  });
+
+  animatedSections.forEach(section => {
+    observer.observe(section);
+  });
+
+});

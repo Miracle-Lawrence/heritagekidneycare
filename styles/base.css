@@ -788,10 +788,9 @@ body {
   transition: all 0.4s ease;
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-}
-/* Hover Lift */
-.panel {
-  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
 }
 
 .panel:hover {
@@ -836,11 +835,7 @@ body {
   color: black;
 }
 
-.panel {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease forwards;
-}
+
 
 .panel:nth-child(2) {
   animation-delay: 0.2s;
@@ -856,25 +851,6 @@ body {
   }
 }
 
-.panel {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.panel:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.panel:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* =========================
    CONSULTATION SECTION
@@ -909,7 +885,7 @@ body {
   font-size: 20px;
   margin-bottom: 25px;
   font-weight: 600;
-  color: #d60000; /* brand accent */
+  color: var(--color-dark-red); /* brand accent */
 }
 
 .consultation-text p {
@@ -982,6 +958,23 @@ body {
   opacity: 1;
 }
 
+/* =========================
+   GLOBAL SCROLL REVEAL
+========================= */
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: 
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.section-animate.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -1097,6 +1090,8 @@ body {
   .panels-wrapper {
     grid-template-columns: 1fr; /* Stack panels vertically */
   }
+
+  
 }
 
 @media (min-width: 901px) {
