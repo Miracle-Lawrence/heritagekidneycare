@@ -42,3 +42,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
   animateBackground();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const panels = document.querySelectorAll(".panel");
+
+  let lastScrollY = window.scrollY;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const currentScrollY = window.scrollY;
+
+          if (currentScrollY > lastScrollY) {
+            // Scrolling DOWN → from LEFT
+            entry.target.style.transform = "translateX(-80px)";
+            requestAnimationFrame(() => {
+              entry.target.classList.add("show-from-left");
+            });
+          } else {
+            // Scrolling UP → from RIGHT
+            entry.target.style.transform = "translateX(80px)";
+            requestAnimationFrame(() => {
+              entry.target.classList.add("show-from-right");
+            });
+          }
+
+          lastScrollY = currentScrollY;
+        }
+      });
+    },
+    { threshold: 0.3 },
+  );
+
+  panels.forEach((panel) => observer.observe(panel));
+});
+
+// Optional: Add fade-in animation for services
+const services = document.querySelectorAll('.service');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+services.forEach(service => {
+  service.style.opacity = 0;
+  service.style.transform = 'translateY(20px)';
+  observer.observe(service);
+});
