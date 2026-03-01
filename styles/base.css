@@ -2,6 +2,7 @@
   --color-dark-red: #770000;
   --color-olive-green: #5a8500;
   --color-dark-blue: #010891;
+  --color-olive-green-rgb: 90, 133, 0;
 }
 
 body {
@@ -977,9 +978,511 @@ body {
 }
 
 
+/* =========================
+   ACHIEVEMENTS SECTION
+========================= */
+
+.container {
+  display: flex;
+  gap: 60px;
+  padding: 100px 8%;
+  background: #0f0f0f;
+  color: #fff;
+  align-items: center;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left-section {
+  flex: 1;
+}
+
+.left-section h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.left-section h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #d60000;
+  display: block;
+  margin-top: 12px;
+}
+
+.left-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Button */
+
+.milestone-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #d60000;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.milestone-btn:hover {
+  background: #a80000;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(214, 0, 0, 0.3);
+}
+
+/* =========================
+   RIGHT SIDE GRID
+========================= */
+
+.right-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Achievement Cards */
+
+.achievement {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.achievement h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.achievement p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Hover Effect */
+
+.achievement:hover {
+  transform: translateY(-8px);
+  background: rgba(214, 0, 0, 0.08);
+  border: 1px solid rgba(214, 0, 0, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ===============================
+   REVIEWS SECTION
+================================== */
+
+.reviews-section {
+  padding: 120px 8%;
+  background: linear-gradient(135deg, #0c1424, #0f1b32);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Soft glow */
+.reviews-section::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 300px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212,175,55,0.2), transparent 70%);
+  filter: blur(100px);
+}
+
+/* Wrapper prevents cutting */
+.reviews-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+.reviews-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.8s ease;
+}
+/* ===============================
+   CARD
+================================== */
+
+.review-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(35px);
+  border-radius: 25px;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 100%;
+  flex: 0 0 calc(50% - 20px); /* 2 cards desktop */
+  box-sizing: border-box;
+}
+
+/* Hover */
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.google-logo {
+  background: #d4af37;
+  color: #111;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+/* Text */
+.review-text {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.review-footer strong {
+  display: block;
+  font-weight: 600;
+}
+
+.review-footer span {
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.reviews {
+  width: 100%;
+  overflow: hidden; /* 🔥 Prevent cut edges */
+  position: relative;
+}
+
+/* ===========================
+   SPLIT SECTION
+=========================== */
+
+.split-screen {
+  display: flex;
+  min-height: 500px;
+  background: linear-gradient(135deg, #0f1b32, #1c2f4a);
+  color: #fff;
+}
+
+/* Panels */
+.left-panel,
+.right-panel {
+  flex: 1;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle Glass Effect */
+.left-panel,
+.right-panel {
+  backdrop-filter: blur(20px);
+}
 
 
 
+/* Left Panel */
+.left-panel {
+  background: var(--color-olive-green-rgb);
+}
+
+/* Right Panel */
+.right-panel {
+  background: gainsboro;
+}
+.right-panel h2{
+  color: var(--color-dark-red);
+}
+
+/* Headings */
+.split-screen h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Paragraph */
+.split-screen p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-grey {
+  background: transparent;
+  border: 2px solid #ccc;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-grey:hover {
+  background: #ccc;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.btn-red {
+  background: #770000;
+  border: 2px solid #770000;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.btn-red:hover {
+  background: transparent;
+  color: #770000;
+  transform: scale(1.08);
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+#newsletter-form input {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+
+/* =====================================
+   FOOTER
+====================================== */
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  padding: 90px 8%;
+  background: #0c1424;
+  color: #ffffff;
+}
+
+/* Column Headings */
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: var(--color-gold, #d4af37);
+}
+
+/* Paragraph Styling */
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin-bottom: 15px;
+}
+
+/* Remove default list styles */
+.footer-column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul a {
+  text-decoration: none;
+}
+
+.footer-column ul li {
+  list-style: none;
+  font-size: 14px;
+  padding: 6px 0;
+  color: #ffffff;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.footer-column ul li:hover {
+  opacity: 1;
+  padding-left: 8px;
+  color: var(--color-gold, #d4af37);
+}
+
+/* Add subtle underline animation */
+.footer-column ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold, #d4af37);
+  transition: width 0.3s ease;
+}
+
+.footer-column ul li:hover::after {
+  width: 50%;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0 50px;
+  background: #0c1424;
+}
+
+.socials a img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Animation */
+.socials a:hover img {
+  transform: translateY(-5px) scale(1.2);
+  filter: brightness(1) invert(0);
+}
+
+/* ==============================
+   SOCIAL SECTION WITH LABEL
+================================= */
+
+.socials {
+  background: #0c1424;
+  padding: 20px 8% 60px;
+  text-align: center;
+}
+
+.social-label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #d4af37;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.social-label span {
+  margin-right: 8px;
+}
+
+/* Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.social-icons a:hover img {
+  transform: translateY(-6px) scale(1.2);
+  filter: brightness(1);
+}
+
+/* ===============================
+   FOOTER BOTTOM
+================================= */
+
+.footer-bottom {
+  background: #0a1220;
+  text-align: center;
+  padding: 20px 8%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.5px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Highlighted Words */
+.footer-bottom span {
+  color: #d4af37; /* Premium gold touch */
+  font-weight: 600;
+}
+
+.footer-bottom strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Hover Effect */
+.footer-bottom p:hover {
+  color: #ffffff;
+}
 
 /* =========================
    RESPONSIVE
@@ -1091,7 +1594,39 @@ body {
     grid-template-columns: 1fr; /* Stack panels vertically */
   }
 
-  
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-section p {
+    margin: 0 auto 30px;
+  }
+
+  .review-card {
+    flex: 0 0 95%; /* 1 card mobile */
+  }
+
+  .split-screen {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 60px 8%;
+  }
+
+  .split-screen h2 {
+    font-size: 24px;
+  }
+
+  .footer-container {
+    padding: 60px 6%;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 901px) {

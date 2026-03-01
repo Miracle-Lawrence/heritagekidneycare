@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Amina Yusuf",
+    "rating": 5,
+    "review": "Heritage Kidney & Medical Care gave me a second chance at life. The transplant team was exceptional and professional.",
+    "location": "Abuja, Nigeria"
+  },
+  {
+    "id": 2,
+    "name": "Chinedu Okafor",
+    "rating": 5,
+    "review": "The dialysis care here is unmatched. Clean environment and compassionate nurses.",
+    "location": "Lagos, Nigeria"
+  },
+  {
+    "id": 3,
+    "name": "Fatima Bello",
+    "rating": 5,
+    "review": "From consultation to surgery, everything was handled with precision and empathy.",
+    "location": "Kano, Nigeria"
+  },
+  {
+    "id": 4,
+    "name": "Ibrahim Musa",
+    "rating": 5,
+    "review": "I travel from another state because I trust their expertise completely.",
+    "location": "Kaduna, Nigeria"
+  },
+  {
+    "id": 5,
+    "name": "Grace Eze",
+    "rating": 5,
+    "review": "Professional doctors and world-class equipment. Truly the best dialysis centre.",
+    "location": "Port Harcourt, Nigeria"
+  },
+  {
+    "id": 6,
+    "name": "Sadiq Ahmed",
+    "rating": 5,
+    "review": "The transplant success rate speaks for itself. I’m forever grateful.",
+    "location": "Abuja, Nigeria"
+  },
+  {
+    "id": 7,
+    "name": "Ngozi Obi",
+    "rating": 5,
+    "review": "The nurses treated me like family throughout my recovery.",
+    "location": "Enugu, Nigeria"
+  },
+  {
+    "id": 8,
+    "name": "Daniel Adeyemi",
+    "rating": 5,
+    "review": "Modern facilities and transparent communication. Highly recommended.",
+    "location": "Ibadan, Nigeria"
+  },
+  {
+    "id": 9,
+    "name": "Hauwa Sule",
+    "rating": 5,
+    "review": "I felt safe and confident during every procedure.",
+    "location": "Sokoto, Nigeria"
+  },
+  {
+    "id": 10,
+    "name": "Michael Johnson",
+    "rating": 5,
+    "review": "International standards right here in Nigeria.",
+    "location": "Abuja, Nigeria"
+  },
+  {
+    "id": 11,
+    "name": "Blessing Udo",
+    "rating": 5,
+    "review": "The team is knowledgeable and incredibly reassuring.",
+    "location": "Uyo, Nigeria"
+  },
+  {
+    "id": 12,
+    "name": "Samuel Nwankwo",
+    "rating": 5,
+    "review": "State-of-the-art dialysis machines and excellent care.",
+    "location": "Owerri, Nigeria"
+  },
+  {
+    "id": 13,
+    "name": "Aisha Mohammed",
+    "rating": 5,
+    "review": "Their second opinion helped me make the right life-saving decision.",
+    "location": "Abuja, Nigeria"
+  },
+  {
+    "id": 14,
+    "name": "Victor Adebayo",
+    "rating": 5,
+    "review": "Professionalism at every level. Truly outstanding.",
+    "location": "Lagos, Nigeria"
+  },
+  {
+    "id": 15,
+    "name": "Ruth Daniel",
+    "rating": 5,
+    "review": "I appreciate the follow-up care after my surgery.",
+    "location": "Jos, Nigeria"
+  },
+  {
+    "id": 16,
+    "name": "Ifeanyi Okoro",
+    "rating": 5,
+    "review": "Their dialysis centre is the best I have seen.",
+    "location": "Abuja, Nigeria"
+  },
+  {
+    "id": 17,
+    "name": "Halima Abubakar",
+    "rating": 5,
+    "review": "The staff are patient, kind, and highly skilled.",
+    "location": "Katsina, Nigeria"
+  },
+  {
+    "id": 18,
+    "name": "Peter Ekanem",
+    "rating": 5,
+    "review": "Everything was seamless and reassuring.",
+    "location": "Calabar, Nigeria"
+  },
+  {
+    "id": 19,
+    "name": "Zainab Aliyu",
+    "rating": 5,
+    "review": "Clean, modern, and very organized facility.",
+    "location": "Minna, Nigeria"
+  },
+  {
+    "id": 20,
+    "name": "Emmanuel George",
+    "rating": 5,
+    "review": "A truly life-changing experience.",
+    "location": "Abuja, Nigeria"
+  }
+]
