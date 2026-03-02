@@ -1879,13 +1879,257 @@ body {
   color: #666;
 }
 
-
-
-
 .story-text figure {
   display: none;
 }
 
+
+/* ======================================
+   BELIEVES SECTION – PREMIUM DESIGN
+====================================== */
+
+.believes {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 100px;
+  padding: 120px 8%;
+  background: #f8f9fb;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* LEFT SIDE */
+
+.belief-block {
+  margin-bottom: 60px;
+}
+
+.belief-block h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.belief-block h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #c6a85b;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.belief-block p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  max-width: 600px;
+}
+
+/* CORE VALUES */
+
+.values {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 40px;
+}
+
+.values li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+}
+
+.values strong {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: #1b4332;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+/* =====================================
+   OPENING HOURS – PREMIUM EDITION
+===================================== */
+
+.right {
+  margin-top: 0;
+}
+.hours {
+  background: #ffffff;
+  padding: 80px 65px;
+  border-radius: 30px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.06);
+  max-width: 300px;
+}
+
+/* Section Title */
+
+.hours h3 {
+  font-size: 26px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.hours h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, #c6a85b, #e6c77d);
+  border-radius: 3px;
+}
+
+/* Hours List */
+
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* generous spacing */
+}
+
+/* Each block */
+
+.hours-list h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  font-weight: 500;
+}
+
+.hours-list p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1b4332; /* deep medical green */
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #770000;
+}
+
+/* Remove border from last item */
+.hours-list p:last-of-type {
+  border-bottom: none;
+}
+
+/* Subtle hover refinement */
+.hours-list h4:hover + p {
+  transform: translateX(6px);
+  transition: 0.3s ease;
+}
+
+
+/* =========================================
+   MILESTONES – PREMIUM EDITORIAL DESIGN
+========================================= */
+
+.milestones {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 100px;
+  align-items: center;
+  padding: 140px 8%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* =====================
+   TEXT SIDE
+===================== */
+
+.milestones-text h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 600;
+}
+
+.milestones-text h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #c6a85b, #e6c77d);
+  border-radius: 3px;
+}
+
+.milestones-text p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 40px;
+  max-width: 650px;
+  text-align: justify;
+}
+
+/* Highlight award name subtly */
+.milestones-text p strong {
+  color: #1b4332;
+  font-weight: 600;
+}
+
+/* =====================
+   BUTTON REFINEMENT
+===================== */
+
+.btn-red {
+  display: inline-block;
+  padding: 16px 36px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  border: none;
+  background: #1b4332;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+  background: #c6a85b;
+  transform: translateY(-3px);
+}
+
+/* =====================
+   IMAGE SIDE
+===================== */
+
+.milestones-image img {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.12);
+  transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+
+.milestones-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 50px 110px rgba(0, 0, 0, 0.18);
+}
 
 
 
@@ -2017,6 +2261,25 @@ body {
     transform: translateY(0);
   }
 }
+
+.believes {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 80px 6%;
+  }
+
+  .core-values {
+    grid-template-columns: 1fr;
+  }
+  .milestones {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 90px 6%;
+  }
+
+  .milestones-image {
+    order: -1;
+  }
 }
 
 @media (min-width: 901px) {
