@@ -984,11 +984,9 @@ body {
 
 .section-animate {
   opacity: 0;
-  transform: translateY(70px);
-  transition: 
-    opacity 0.8s ease,
-    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform, opacity;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
 }
 
 .section-animate.active {
@@ -1503,6 +1501,395 @@ body {
   color: #ffffff;
 }
 
+
+/* =========================
+   ABOUT PAGE HEADER
+========================= */
+
+.about-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/heritage-img2.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.about-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.about-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.about-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   SERVICES PAGE HEADER
+========================= */
+
+.services-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/services.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.services-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.services-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.services-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   CONTACT PAGE HEADER
+========================= */
+
+.contact-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/contact.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.contact-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.contact-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.contact-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+
+/* =========================
+   NEWS PAGE HEADER
+========================= */
+
+.news-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/newsletter.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.news-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.news-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.news-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.news-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   CAREER PAGE HEADER
+========================= */
+
+.career-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/career.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.career-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.career-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.career-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.career-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================================
+   OUR STORY – PREMIUM EDITORIAL DESIGN
+========================================= */
+
+.our-story {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 80px;
+  padding: 120px 8%;
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+}
+
+/* =====================
+   TEXT SIDE
+===================== */
+
+.story-text h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.story-text h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 70px;
+  height: 3px;
+  background: #c6a85b; /* muted gold */
+  border-radius: 2px;
+}
+
+.story-text p {
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+  color: #444;
+  text-align: justify;
+}
+
+.story-text strong {
+  color: #1b4332; /* deep medical green */
+  font-weight: 600;
+}
+
+/* =====================
+   IMAGE SIDE
+===================== */
+
+.story-image {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.story-image figure {
+  margin: 0;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+  transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+
+.story-image img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.2);
+}
+
+.story-image figcaption {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  font-style: italic;
+}
+
+/* =====================
+   INLINE MOBILE IMAGE
+===================== */
+
+.story-text figure {
+  margin: 60px 0;
+}
+
+.story-text figure img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+
+.story-text figcaption {
+  margin-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+}
+
+
+
+
+.story-text figure {
+  display: none;
+}
+
+
+
+
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -1600,6 +1987,36 @@ body {
   .footer-column h3 {
     font-size: 15px;
   }
+
+  .contact-hero, .services-hero, .about-hero, .news-hero, .career-hero {
+  height: 25vh;              
+}
+
+.our-story {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 80px 6%;
+  }
+
+  .story-image {
+    order: -1;
+  }
+
+  .story-text figure {
+    display: block;
+  }
+
+  /* Hide duplicate second image from right column on mobile */
+  .story-image figure:nth-child(2) {
+    display: none;
+  }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }
 
 @media (min-width: 901px) {
