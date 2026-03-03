@@ -2653,7 +2653,7 @@ body {
     font-size: 15px;
   }
 
-  .contact-hero, .services-hero, .about-hero, .news-hero, .career-hero {
+  .contact-hero, .services-hero, .about-hero, .news-hero, .career-hero, .milestones-hero, .appointment-hero, .facilities-hero, .registration-hero, .routine-hero, .surgery-hero, .partnership-hero, .insurance-hero, .diagnostics-hero, .team-hero {
   height: 25vh;              
 }
 
