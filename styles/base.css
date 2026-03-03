@@ -2014,7 +2014,7 @@ body {
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #888;
+  color: #770000;
   font-weight: 500;
 }
 
@@ -2266,6 +2266,13 @@ body {
     grid-template-columns: 1fr;
     gap: 60px;
     padding: 80px 6%;
+  }
+  .hours-list h4 {
+  font-size: 23px;
+  }
+
+  .hours-list p {
+    font-size: 18px;
   }
 
   .core-values {
