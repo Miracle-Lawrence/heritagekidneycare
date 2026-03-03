@@ -1773,6 +1773,427 @@ body {
   border-radius: 3px;
 }
 
+/* =========================
+   MILESTONES PAGE HEADER
+========================= */
+
+.milestones-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/milestones.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.milestones-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.milestones-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.milestones-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.milestones-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   APPOINTMENT PAGE HEADER
+========================= */
+
+.appointment-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/appointment.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.appointment-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.appointment-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.appointment-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.appointment-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   FACILITIES PAGE HEADER
+========================= */
+
+.facilities-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/facilities.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.facilities-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.facilities-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.facilities-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.facilities-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   REGISTRATION PAGE HEADER
+========================= */
+
+.registration-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/registration.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.registration-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.registration-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.registration-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.registration-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   ROUTINE PAGE HEADER
+========================= */
+
+.routine-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/routine.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.routine-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.routine-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.routine-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.routine-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   SURGERY PAGE HEADER
+========================= */
+
+.surgery-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/surgery.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.surgery-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.surgery-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.surgery-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.surgery-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+/* =========================
+   PARTNERSHIP, DIAGNOSTICS, DIALYSIS, TEAM AND INSURANCE  PAGE HEADER
+========================= */
+
+.partnership-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/partnership.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.partnership-hero::before, .dialysis-hero::before, .insurance-hero::before, .diagnostics-hero::before, .team-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+/* Content */
+.partnership-hero-overlay, .dialysis-hero-overlay, .insurance-hero-overlay, .diagnostics-hero-overlay, .team-hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.partnership-hero-overlay h1, .dialysis-hero-overlay h1, .insurance-hero-overlay h1, .diagnostics-hero-overlay h1, .team-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Elegant gold underline */
+.partnership-hero-overlay h1::after, .dialysis-hero-overlay h1::after, .insurance-hero-overlay h1::after, .diagnostics-hero-overlay h1::after, .team-hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+  background: #d4af37;
+  border-radius: 3px;
+}
+
+.insurance-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/insurance.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.team-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/team.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dialysis-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/dialysis.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.diagnostics-hero {
+  position: relative;
+  height: 50vh;              /* Short header height */
+  min-height: 220px;
+  background: url("../images/diagnostics.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 /* =========================================
    OUR STORY – PREMIUM EDITORIAL DESIGN
 ========================================= */
