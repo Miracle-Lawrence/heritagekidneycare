@@ -2,43 +2,43 @@
   {
     "image": "images/Kidney-care-management.webp",
     "name": "Kidney Care & Management",
-    "description": "Comprehensive medical care focused on preventing, diagnosing, and managing kidney-related conditions. Our team provides personalized treatment plans, lifestyle guidance, and continuous monitoring to protect kidney function and improve overall health.",
+    "description": "Comprehensive medical care focused on the prevention, accurate diagnosis, and effective management of kidney-related conditions. Our experienced nephrology team provides personalized treatment plans, lifestyle guidance, and continuous monitoring to protect kidney function and improve overall health. We deliver expert care for chronic kidney disease, acute kidney injury, and other kidney disorders, ensuring compassionate support and long-term management for every patient.",
     "button": "Show More"
   },
   {
     "image": "images/dialysis-lab.webp",
     "name": "Dialysis Services",
-    "description": "Advanced dialysis treatments designed to support patients with kidney failure. Our modern dialysis units and experienced specialists ensure safe, effective, and comfortable sessions for patients requiring regular renal support.",
+    "description": "Advanced dialysis treatments designed to support patients living with kidney failure. Our state-of-the-art dialysis center is equipped with over 60 dialysis machines and offers General, Private, VIP, and VVIP wards to ensure comfort for every patient. With experienced specialists and modern technology, we provide safe, effective, and personalized hemodialysis sessions tailored to each patient’s medical needs and lifestyle.",
     "button": "Show More"
   },
   {
     "image": "images/diabetes-hypertension.webp",
     "name": "Hypertension & Diabetes Management",
-    "description": "Specialized care for patients living with hypertension and diabetes — two major risk factors for kidney disease. We provide expert monitoring, medication management, dietary guidance, and long-term care strategies.",
+    "description": "Specialized care for patients living with hypertension and diabetes — two major risk factors for kidney disease. Hypertension and diabetes are among the leading causes of kidney failure, making early detection and proper management essential. We provide expert monitoring, medication management, dietary guidance, and long-term care strategies to prevent complications. Our comprehensive programs focus on controlling high blood pressure and blood sugar levels, helping patients protect their kidney health and live healthier lives.",
     "button": "Show More"
   },
   {
     "image": "images/kidney-transplant.webp",
     "name": "Kidney Transplant",
-    "description": "Expert kidney transplant services supported by a highly trained surgical and medical team. From evaluation to surgery and post-transplant care, we provide comprehensive support for successful transplant outcomes.",
+    "description": "Expert kidney transplant services delivered by a highly trained surgical and medical team. From initial evaluation and preparation to surgery and comprehensive post-transplant care, we provide end-to-end support to ensure successful transplant outcomes. As pioneers of kidney transplantation in Abuja, having performed the first successful kidney transplant in the region, our team brings unmatched experience and expertise. We guide patients through every stage of the transplant journey, from pre-transplant work-up to long-term follow-up care, ensuring optimal recovery and lasting results.",
     "button": "Show More"
   },
   {
     "image": "images/kidney-diagnostic.webp",
     "name": "Diagnostics",
-    "description": "State-of-the-art diagnostic services designed to detect kidney diseases early and monitor patient health effectively. Our diagnostic services support both prevention and long-term disease management.",
+    "description": "State-of-the-art diagnostic services designed to detect kidney diseases early and monitor patient health effectively. Our advanced laboratory services support accurate diagnosis, early detection, prevention, and long-term disease management. With on-site laboratory testing, we deliver reliable and timely results to guide effective treatment decisions. To combat kidney failure, early detection is essential — which is why our laboratory unit offers essential routine tests to identify early signs of kidney disease and ensure proactive patient care. Below are some vital routine tests.",
     "button": "Show More"
   },
   {
     "image": "images/urine-test.webp",
     "name": "Basic Tests to Detect Early Kidney Disease",
-    "description": "Routine laboratory tests that help identify early signs of kidney disease. Early detection allows timely intervention, helping patients maintain healthy kidney function.",
+    "description": "Routine laboratory tests designed to detect early signs of kidney disease and monitor overall health. Early detection enables timely intervention and helps preserve kidney function. Our basic diagnostic panel includes Full Blood Count (FBC), Kidney Function Test (EUCr), Liver Function Test (LFT), Fasting and Random Blood Sugar (FBS/RBS), Urinalysis, and Serology to support accurate assessment and proactive care.",
     "button": "Show More"
   },
   {
     "image": "images/post-test.webp",
     "name": "Post-Transplant Tests",
-    "description": "Specialized tests carried out after kidney transplantation to monitor organ function, detect possible complications early, and ensure the long-term success of the transplant.",
+    "description": "Specialized tests performed after kidney transplantation to monitor graft function, detect complications early, and ensure long-term transplant success. Our post-transplant management panel includes Full Blood Count (FBC), Post Kidney Transplant Function Test, Tacrolimus Trough Level Test, Urinalysis, Lipid Profile, HbA1c (Glycated Hemoglobin), Prostate Surface Antigen (for male patients), and Doppler Scan to support continuous monitoring and optimal patient outcomes.",
     "button": "Show More"
   },
   {
@@ -58,5 +58,11 @@
     "name": "Gold Standard Routine Tests",
     "description": "Premium diagnostic screening designed to deliver detailed health insights using advanced testing protocols and expert analysis.",
     "button": "Show More"
-  }
+  },
+  {
+  "image": "images/specialist-consultations.webp",
+  "name": "Specialist Consultations",
+  "description": "Chronic Kidney Disease unlocks a host of other health challenges. Our team encompasses leading experts across multiple specialties to provide comprehensive care:\n\nNephrology Consultation – Advanced kidney care and management.\nUrology Consultation – Urinary tract and male reproductive health care.\nOncology Consultation – Cancer care and treatment guidance.\nCardiology Consultation – Heart health and cardiovascular wellness.",
+  "button": "Show More"
+}
 ]
