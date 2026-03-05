@@ -2554,56 +2554,79 @@ body {
 }
 
 
-.services {
-  padding: 80px 5%;
-}
+/* =====================
+   SERVICES PAGE
+===================== */
 
-.services-grid {
+
+#services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 50px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .service-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-.service-image img {
+.service-image {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
+  border-radius: 6px;
+}
+.service-card:hover .service-image {
+  animation: serviceZoom 2s ease-in-out infinite;
 }
 
-.service-content {
-  padding: 20px;
+.service-title {
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
+  color: #770000;
 }
 
-.service-content h3 {
-  margin-bottom: 10px;
+.service-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-.service-content p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.service-btn {
-  margin-top: 15px;
-  padding: 10px 20px;
+.service-button {
+  background: #770000;
+  color: #fff;
   border: none;
-  background: #b21e23;
-  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.service-button:hover {
+  background: #a80000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  animation: serviceZoom 2s ease-in-out infinite;
+}
+
+@keyframes serviceZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
 
 
 /* =========================
@@ -2704,7 +2727,7 @@ body {
     font-size: 15px;
   }
 
-  .contact-hero, .services-hero, .about-hero, .news-hero, .career-hero, .milestones-hero, .appointment-hero, .facilities-hero, .registration-hero, .routine-hero, .surgery-hero, .partnership-hero, .insurance-hero, .diagnostics-hero, .team-hero {
+  .contact-hero, .services-hero, .about-hero, .news-hero, .career-hero, .milestones-hero, .appointment-hero, .facilities-hero, .dialysis-hero, .registration-hero, .routine-hero, .surgery-hero, .partnership-hero, .insurance-hero, .diagnostics-hero, .team-hero {
   height: 25vh;              
 }
 

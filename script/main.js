@@ -1,8 +1,7 @@
 import { renderTestimonials } from "./render.js";
 import { initSlider } from "./slider.js";
 import { initNewsletterValidation } from "./validation.js";
-import { loadServices } from "./services.js";
-
+import { renderServices } from "./services.js";
 
 
 const track = document.querySelector(".reviews-track");
@@ -24,8 +23,21 @@ async function loadData() {
   }
 }
 
+// scripts/main.js
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("./json/services.json")
+    .then(response => response.json())
+    .then(data => {
+      renderServices(data);
+    })
+    .catch(error => console.error("Error loading services:", error));
+});
+
+
 loadData();
 initNewsletterValidation();
-loadServices();
+
 
 

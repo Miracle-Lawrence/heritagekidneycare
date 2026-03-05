@@ -1,6 +1,6 @@
 [
   {
-    "image": "images/kidney-care.webp",
+    "image": "images/Kidney-care-management.webp",
     "name": "Kidney Care & Management",
     "description": "Comprehensive medical care focused on preventing, diagnosing, and managing kidney-related conditions. Our team provides personalized treatment plans, lifestyle guidance, and continuous monitoring to protect kidney function and improve overall health.",
     "button": "Show More"
@@ -12,7 +12,7 @@
     "button": "Show More"
   },
   {
-    "image": "images/hypertension-diabetes.webp",
+    "image": "images/diabetes-hypertension.webp",
     "name": "Hypertension & Diabetes Management",
     "description": "Specialized care for patients living with hypertension and diabetes — two major risk factors for kidney disease. We provide expert monitoring, medication management, dietary guidance, and long-term care strategies.",
     "button": "Show More"
@@ -24,25 +24,25 @@
     "button": "Show More"
   },
   {
-    "image": "images/diagnostics.webp",
+    "image": "images/kidney-diagnostic.webp",
     "name": "Diagnostics",
     "description": "State-of-the-art diagnostic services designed to detect kidney diseases early and monitor patient health effectively. Our diagnostic services support both prevention and long-term disease management.",
     "button": "Show More"
   },
   {
-    "image": "images/basic-tests.webp",
+    "image": "images/urine-test.webp",
     "name": "Basic Tests to Detect Early Kidney Disease",
     "description": "Routine laboratory tests that help identify early signs of kidney disease. Early detection allows timely intervention, helping patients maintain healthy kidney function.",
     "button": "Show More"
   },
   {
-    "image": "images/post-transplant-tests.webp",
+    "image": "images/post-test.webp",
     "name": "Post-Transplant Tests",
     "description": "Specialized tests carried out after kidney transplantation to monitor organ function, detect possible complications early, and ensure the long-term success of the transplant.",
     "button": "Show More"
   },
   {
-    "image": "images/basic-routine-tests.webp",
+    "image": "images/basic-test.webp",
     "name": "Basic Standard Routine Tests",
     "description": "Essential health screening tests that provide a general overview of a patient’s health status and help detect potential medical conditions at an early stage.",
     "button": "Show More"

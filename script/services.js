@@ -1,31 +1,18 @@
-export async function loadServices() {
-  const container = document.getElementById("servicesContainer");
+// scripts/services.js
+export function renderServices(services) {
+  const container = document.getElementById("services-container");
 
-  if (!container) return;
+  services.forEach((service) => {
+    const card = document.createElement("div");
+    card.className = "service-card";
 
-  try {
-    const response = await fetch("./json/services.json");
-    const services = await response.json();
+    card.innerHTML = `
+      <img src="${service.image}" alt="${service.name}" class="service-image">
+      <h3 class="service-title">${service.name}</h3>
+      <p class="service-description">${service.description}</p>
+      <button class="service-button">${service.button}</button>
+    `;
 
-    services.forEach((service) => {
-      const card = document.createElement("div");
-      card.classList.add("service-card");
-
-      card.innerHTML = `
-        <div class="service-image">
-          <img src="${service.image}" alt="${service.name}" loading="lazy">
-        </div>
-
-        <div class="service-content">
-          <h3>${service.name}</h3>
-          <p>${service.description}</p>
-          <button class="service-btn">${service.button}</button>
-        </div>
-      `;
-
-      container.appendChild(card);
-    });
-  } catch (error) {
-    console.error("Error loading services:", error);
-  }
+    container.appendChild(card);
+  });
 }
