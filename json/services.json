@@ -1,0 +1,62 @@
+[
+  {
+    "image": "images/kidney-care.webp",
+    "name": "Kidney Care & Management",
+    "description": "Comprehensive medical care focused on preventing, diagnosing, and managing kidney-related conditions. Our team provides personalized treatment plans, lifestyle guidance, and continuous monitoring to protect kidney function and improve overall health.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/dialysis-lab.webp",
+    "name": "Dialysis Services",
+    "description": "Advanced dialysis treatments designed to support patients with kidney failure. Our modern dialysis units and experienced specialists ensure safe, effective, and comfortable sessions for patients requiring regular renal support.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/hypertension-diabetes.webp",
+    "name": "Hypertension & Diabetes Management",
+    "description": "Specialized care for patients living with hypertension and diabetes — two major risk factors for kidney disease. We provide expert monitoring, medication management, dietary guidance, and long-term care strategies.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/kidney-transplant.webp",
+    "name": "Kidney Transplant",
+    "description": "Expert kidney transplant services supported by a highly trained surgical and medical team. From evaluation to surgery and post-transplant care, we provide comprehensive support for successful transplant outcomes.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/diagnostics.webp",
+    "name": "Diagnostics",
+    "description": "State-of-the-art diagnostic services designed to detect kidney diseases early and monitor patient health effectively. Our diagnostic services support both prevention and long-term disease management.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/basic-tests.webp",
+    "name": "Basic Tests to Detect Early Kidney Disease",
+    "description": "Routine laboratory tests that help identify early signs of kidney disease. Early detection allows timely intervention, helping patients maintain healthy kidney function.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/post-transplant-tests.webp",
+    "name": "Post-Transplant Tests",
+    "description": "Specialized tests carried out after kidney transplantation to monitor organ function, detect possible complications early, and ensure the long-term success of the transplant.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/basic-routine-tests.webp",
+    "name": "Basic Standard Routine Tests",
+    "description": "Essential health screening tests that provide a general overview of a patient’s health status and help detect potential medical conditions at an early stage.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/platinum-tests.webp",
+    "name": "Platinum Standard Routine Tests",
+    "description": "Comprehensive health screening packages that provide deeper insights into a patient’s health through advanced laboratory and diagnostic evaluations.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/gold-tests.webp",
+    "name": "Gold Standard Routine Tests",
+    "description": "Premium diagnostic screening designed to deliver detailed health insights using advanced testing protocols and expert analysis.",
+    "button": "Show More"
+  }
+]
