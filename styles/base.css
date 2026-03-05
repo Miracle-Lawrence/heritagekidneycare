@@ -517,14 +517,18 @@ body {
    DARK LUXURY OVERLAY
 ============================= */
 
+/* =============================
+   LIGHTER LUXURY OVERLAY
+============================= */
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     120deg,
-    rgba(8, 15, 30, 0.85),
-    rgba(8, 15, 30, 0.75),
-    rgba(8, 15, 30, 0.6)
+    rgba(8, 15, 30, 0.55),
+    rgba(8, 15, 30, 0.45),
+    rgba(8, 15, 30, 0.3)
   );
   display: flex;
   align-items: center;
@@ -538,6 +542,7 @@ body {
 .hero-content {
   max-width: 700px;
   color: #ffffff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   animation: fadeUp 1.2s ease forwards;
 }
 
