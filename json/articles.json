@@ -1,0 +1,101 @@
+{
+  "articles": [
+    {
+      "title": "Early Signs of Kidney Disease You Should Never Ignore",
+      "author": "Dr. Ibrahim Musa",
+      "date": "2026-03-02",
+      "category": "Kidney Health",
+      "featured": true,
+      "summary": "Kidney disease often develops silently, with symptoms appearing only when the condition has progressed. Early detection through routine tests like Kidney Function Test and Urinalysis can help prevent severe complications."
+    },
+    {
+      "title": "The Link Between Hypertension, Diabetes, and Kidney Failure",
+      "author": "Dr. Fatima Abdullahi",
+      "date": "2026-02-25",
+      "category": "Preventive Care",
+      "featured": true,
+      "summary": "Hypertension and diabetes are the leading causes of kidney failure. Managing blood pressure and blood sugar can significantly reduce the risk of kidney damage and protect long-term kidney health."
+    },
+    {
+      "title": "Understanding Hemodialysis: What Patients Should Expect",
+      "author": "Dr. Samuel Okeke",
+      "date": "2026-02-18",
+      "category": "Dialysis Services",
+      "featured": true,
+      "summary": "Hemodialysis is a life-saving treatment for patients with kidney failure. Learn how dialysis works, what patients should expect during treatment, and how to prepare."
+    },
+    {
+      "title": "Kidney Transplant: A New Chance at Life",
+      "author": "Prof. Nadey Hakim",
+      "date": "2026-02-10",
+      "category": "Kidney Transplant",
+      "featured": true,
+      "summary": "Kidney transplantation offers patients with end-stage kidney disease a chance to regain a healthier life. This article explains the transplant process and the importance of pre and post-transplant care."
+    },
+    {
+      "title": "Why Routine Laboratory Tests Are Important for Kidney Health",
+      "author": "Dr. Grace Eze",
+      "date": "2026-02-03",
+      "category": "Diagnostics",
+      "featured": false,
+      "summary": "Routine laboratory tests such as Full Blood Count, Kidney Function Test, and Blood Sugar tests help doctors detect early signs of kidney disease before symptoms appear."
+    },
+    {
+      "title": "Life After Kidney Transplant: Essential Post-Transplant Tests",
+      "author": "Dr. Ibrahim Musa",
+      "date": "2026-01-28",
+      "category": "Post-Transplant Care",
+      "featured": false,
+      "summary": "Continuous monitoring after a kidney transplant is essential for long-term success. Post-transplant tests help detect complications early and maintain kidney health."
+    },
+    {
+      "title": "Managing Chronic Kidney Disease for a Healthier Life",
+      "author": "Dr. Aisha Bello",
+      "date": "2026-01-20",
+      "category": "Chronic Disease Management",
+      "featured": false,
+      "summary": "Chronic Kidney Disease affects millions globally. Proper management through medication, lifestyle changes, and regular monitoring can slow disease progression."
+    },
+    {
+      "title": "The Importance of Specialist Consultations in Kidney Care",
+      "author": "Dr. Michael Adeyemi",
+      "date": "2026-01-14",
+      "category": "Specialist Consultations",
+      "featured": false,
+      "summary": "Kidney disease can impact other organs, making multidisciplinary care essential. Specialists in nephrology, cardiology, urology, and oncology work together for comprehensive treatment."
+    },
+    {
+      "title": "How Health Insurance Helps Patients Access Quality Kidney Care",
+      "author": "Mrs. Deborah Ogunleye",
+      "date": "2026-01-07",
+      "category": "Health Insurance",
+      "featured": false,
+      "summary": "Health insurance helps patients access quality kidney care without overwhelming financial stress. Many HMOs now support dialysis, diagnostics, and transplant care."
+    },
+    {
+  "title": "How Lifestyle Choices Affect Kidney Health",
+  "author": "Dr. Aisha Bello",
+  "date": "2025-12-28",
+  "category": "Kidney Health",
+  "featured": false,
+  "summary": "Daily lifestyle habits such as diet, hydration, exercise, and avoiding excessive medication can significantly influence kidney health. Small healthy choices today can prevent serious kidney problems in the future."
+},
+{
+  "title": "Understanding Kidney Function Tests and What the Results Mean",
+  "author": "Dr. Grace Eze",
+  "date": "2025-12-18",
+  "category": "Diagnostics",
+  "featured": false,
+  "summary": "Kidney function tests like EUCr and urinalysis help doctors evaluate how well your kidneys are filtering waste from your blood. Understanding these results can help patients take proactive steps toward better health."
+},
+{
+  "title": "Why Regular Blood Pressure Monitoring Protects Your Kidneys",
+  "author": "Dr. Fatima Abdullahi",
+  "date": "2025-12-08",
+  "category": "Preventive Care",
+  "featured": false,
+  "summary": "High blood pressure is one of the most common causes of kidney damage. Regular monitoring and early treatment can prevent long-term complications and help maintain healthy kidney function."
+}
+  ]
+}
+ 

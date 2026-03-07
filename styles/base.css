@@ -2672,6 +2672,150 @@ body {
 }
 
 
+/* =============================
+   ARTICLES SECTION
+============================= */
+
+.articles-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.articles-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #0f2a44;
+  font-weight: 600;
+}
+
+
+/* =============================
+   ARTICLES GRID
+============================= */
+
+#articles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+
+/* =============================
+   ARTICLE CARD
+============================= */
+
+.article-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #eef2f6;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.article-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+
+/* =============================
+   CATEGORY TAG
+============================= */
+
+.article-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-olive-green);
+  margin-bottom: 12px;
+}
+
+
+/* =============================
+   ARTICLE TITLE
+============================= */
+
+.article-title {
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: var(--color-dark-red);
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+
+/* =============================
+   SUMMARY TEXT
+============================= */
+
+.article-summary {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5f6c7b;
+  margin-bottom: 20px;
+}
+
+.article-author {
+  color: var(--color-dark-red);
+}
+
+
+/* =============================
+   META INFO
+============================= */
+
+.article-meta {
+  font-size: 0.8rem;
+  color: #8a96a3;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eef2f6;
+  padding-top: 12px;
+}
+
+
+/* =============================
+   FEATURED BADGE
+============================= */
+
+.featured-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #770000;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 1100px) {
+  #articles-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  #articles-container {
+    grid-template-columns: 1fr;
+  }
+
+  .articles-section {
+    padding: 60px 20px;
+  }
+}
 
 /* =========================
    RESPONSIVE
