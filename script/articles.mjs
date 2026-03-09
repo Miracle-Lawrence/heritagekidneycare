@@ -1,30 +1,33 @@
-// scripts/articles.mjs
+// scripts/articles.js
 
 export function renderArticles(articles) {
   const container = document.getElementById("articles-container");
 
-  if (!container) return;
-
   container.innerHTML = "";
 
   articles.forEach((article) => {
-    const card = document.createElement("div");
+    const card = document.createElement("article");
     card.className = "article-card";
 
     card.innerHTML = `
+      <div class="article-image">
+        <img src="${article.image}" alt="${article.title}">
+      </div>
+
       <div class="article-content">
         <span class="article-category">${article.category}</span>
+
         <h3 class="article-title">${article.title}</h3>
-        <p class="article-summary">${article.summary}</p>
 
-        <div class="article-meta">
-          <span class="article-author">By ${article.author}</span>
-          <span class="article-date">${new Date(article.date).toDateString()}</span>
-        </div>
+        <p class="article-date">${new Date(article.date).toDateString()}</p>
 
-        ${
-          article.featured ? `<span class="featured-badge">Featured</span>` : ""
-        }
+        <p class="article-text">
+          ${article.content}
+        </p>
+
+        <a href="#" class="read-more">
+          ${article.readMore} →
+        </a>
       </div>
     `;
 
