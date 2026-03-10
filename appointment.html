@@ -37,6 +37,7 @@
     <!-- Styles & Scripts -->
     <link rel="stylesheet" href="styles/base.css" >
     <script src="script/menu.js" defer></script>
+    <script src="script/appointment.js" defer></script>
 
     <title>Book an Appointment - Heritage Kidney & Medical Care</title>
   </head>
@@ -136,10 +137,312 @@
       </div>
       </div>
     <div class="menu-overlay"></div>
+
+    <main>
     <section class="appointment-hero">
         <div class="appointment-hero-overlay">
           <h1>Book an Appointment</h1>
         </div>
       </section>
+
+  <section class="appointment-hours">
+  <div class="appointment-info">
+    <h2>Requesting an Appointment</h2>
+    <p>We offer several convenient ways for you to schedule an appointment with our specialists at Heritage Kidney and Medical Care.</p>
+
+    <div class="appointment-item">
+      <img src="image/photo.svg" alt="">
+      <div>
+        <h3>Call to Schedule an Appointment</h3>
+        <p>
+          You can request an appointment by calling our Front Desk on 
+          <strong>08129908324</strong> or 
+          <strong>09120338755</strong>. Our staff will assist you in selecting a convenient date and time.
+        </p>
+      </div>
+    </div>
+
+    <div class="appointment-item">
+      <img src="image/photo.svg" alt="">
+      <div>
+        <h3>Send a Text Message</h3>
+        <p>
+          You may also request an appointment by sending a text message to our Front Desk on 
+          <strong>08129908324</strong> or 
+          <strong>09120338755</strong>. A member of our team will respond to confirm your appointment.
+        </p>
+      </div>
+    </div>
+
+    <div class="appointment-item">
+      <img src="image/photo.svg" alt="">
+      <div>
+        <h3>Send a WhatsApp Message</h3>
+        <p>
+          For quick assistance, you can send a WhatsApp message to 
+          <strong>08129908324</strong> or 
+          <strong>09120338755</strong>. Our team will help schedule your appointment and answer any questions you may have.
+        </p>
+      </div>
+    </div>
+
+    <div class="appointment-item">
+      <img src="image/photo.svg" alt="">
+      <div>
+        <h3>Visit the Hospital</h3>
+        <p>
+          You can also schedule an appointment by visiting the Front Desk at Heritage Kidney and Medical Care. 
+          Our staff will gladly assist you with booking a consultation with the appropriate specialist.
+        </p>
+      </div>
+    </div>
+
+    <div class="appointment-item">
+      <img src="image/photo.svg" alt="">
+      <div>
+        <h3>Request an Appointment Online</h3>
+        <p>
+          You can request an appointment online by filling out the appointment form below. 
+          Our Front Desk staff will contact you to confirm your appointment details.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="hours">
+      <h3>Opening Hours</h3>
+      <div class="hours-list">
+        <h4>Monday – Sunday</h4>
+        <p>24 Hours</p>
+
+        <h4>Emergency Services</h4>
+        <p>24 Hours</p>
+
+        <h4>Pharmacy</h4>
+        <p>24 Hours</p>
+
+        <h4>Laboratory</h4>
+        <p>24 Hours</p>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="appointment-wrapper">
+
+  <!-- FORM PANEL -->
+  <div class="form-panel">
+
+    <div class="form-progress">
+      <span class="progress-step active">Your Details</span>
+      <span class="progress-divider"></span>
+      <span class="progress-step">Schedule Visit</span>
+    </div>
+
+    <form id="appointmentForm">
+
+      <div class="form-stage-container">
+
+        <!-- STAGE 1 -->
+        <div class="form-layer intro-stage active">
+
+          <div class="name-row">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+          </div>
+
+          <div class="phone-input">
+            <select>
+              <option value="+234">+234</option>
+            </select>
+
+            <input 
+              type="tel"
+              id="phone"
+              placeholder="0802 123 4567"
+              required
+            >
+          </div>
+
+          <button type="button" class="next-button" onclick="goToNextLayer()">
+            Continue
+          </button>
+
+        </div>
+
+
+
+        <!-- STAGE 2 -->
+        <div class="form-layer schedule-stage">
+
+          <input type="date" id="date" required>
+          <input type="time" id="time" required>
+
+          <div class="button-row">
+            <button type="button" class="back-button" onclick="goBackLayer()">
+              Back
+            </button>
+
+            <button type="submit" class="submit-button">
+              Book Appointment
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+
+
+  <!-- CONTACT PANEL -->
+
+  <div class="contact-panel">
+
+    <h3>Contact Information</h3>
+
+    <div class="contact-item">
+      <div class="contact-icon">
+        <img src="images/phone.svg">
+      </div>
+      <div class="contact-text">
+        <strong>Emergency</strong>
+        <span>+234 9167760222</span>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">
+        <img src="images/phone.svg">
+      </div>
+      <div class="contact-text">
+        <strong>Front Desk / Reception</strong>
+        <span>+234 9167767081</span>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">
+        <img src="images/phone.svg">
+      </div>
+      <div class="contact-text">
+        <strong>Service Managers</strong>
+        <span>+234 8033875967</span>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">
+        <img src="images/stethoscope-svgrepo-com.svg">
+      </div>
+      <div class="contact-text">
+        <strong>Routine Consultation</strong>
+        <span>Mon – Sun : 24 Hours</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+</main>
+<footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>ABOUT HERITAGE KIDNEY AND MEDICAL CARE</h3>
+          <p>
+            <strong>Address:</strong><br />
+            Plot 1258 B11 Kaura District, Opp. Suncity Junction, Before African
+            International college, Abuja.
+          </p>
+          <p>
+            <strong>Contact:</strong><br />
+            09167760222, 09167767081, 08033875967
+          </p>
+
+          <p>
+            <strong>Email:</strong><br />
+            heritagekmc@gmail.com
+          </p>
+          <p>
+            <strong>Heritage Kidney and Medical Care</strong><br />
+            Specialized Renal & Medical Services
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>ABOUT US</h3>
+          <ul>
+            <a href="about.html"><li>About Heritage</li></a>
+            <a href="team.html"><li>Management Team</li></a>
+            <a href="partnership.html"><li>Partnership</li></a>
+            <a href="facilities.html"><li>Facilities and Equipment</li></a>
+            <a href="routine.html"><li>Routine Processes</li></a>
+            <a href="insurance.html"><li>Insurance / HMOs</li></a>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>KEY SERVICES</h3>
+          <ul>
+            <a href="dialysis.html"><li>Dialysis Services</li></a>
+            <a href="diagnostics.html"><li>Renal Surgery</li></a>
+            <a href="surgery.html"><li>Surgery</li></a>
+            <a href="services.html"><li>Services</li></a>
+            <a href="pharmacy.html"><li>Pharmacy: 24 hours</li></a>
+            <a href="services.html"><li>Laboratory: 24 hours</li></a>
+            <a href="diagnostics.html"><li>In-patient Services</li></a>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <a href="appointment.html"><li>Request an Appointment</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="news.html"><li>News and Articles</li></a>
+            <a href="career.html"><li>Career Opportunities</li></a>
+            <a href="milestones.html"><li>Our Milestones</li></a>
+            <a href="registration.html"><li>Patient Registration</li></a>
+            <a href="insurance.html"><li>Insurance / HMOs</li></a>
+            <a href="partnership.html"><li>Partnerships</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="social-label"><span>|</span> Follow Us</div>
+
+        <div class="social-icons">
+          <a href="https://wa.me/2349167760222" target="_blank">
+            <img src="images/whatsapp.svg" alt="Whatsapp" />
+          </a>
+
+          <a href="https://www.instagram.com/heritagekmc" target="_blank">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+
+          <a href="https://www.tiktok.com/@heritagekmc" target="_blank">
+            <img src="images/tik-tok.svg" alt="TikTok" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61584938193553"
+            target="_blank"
+          >
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/HeritageMeds" target="_blank">
+            <img src="images/twitter-alt.svg" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span>Heritage Kidney and Medical Care</span> | Designed by
+          <strong>Miracle Lawrence</strong> and <strong>Umedike Ukpai</strong>
+        </p>
+      </div>
+    </footer>
+     
   </body>
 </html>

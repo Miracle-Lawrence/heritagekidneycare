@@ -2900,179 +2900,167 @@ body {
 /* -------------------------
    FORM CARD
 ------------------------- */
+
 .application-form-box {
-  background: #ffffff;
+  max-width: 720px;
+  margin: auto;
   padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", sans-serif;
 }
 
 .form-title {
-  font-size: 1.6rem;
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 10px;
-  color: #0a2a43;
+  color: var(--color-dark-red);
 }
 
 .form-disclaimer {
   font-size: 14px;
-  color: #6b7c8c;
+  color: #777;
   margin-bottom: 30px;
-  line-height: 1.6;
 }
 
-/* -------------------------
-   FLOATING LABELS
-------------------------- */
-.floating-label {
+/* FORM LAYOUT */
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+/* INPUT GROUP */
+.form-group {
   position: relative;
-  margin-bottom: 18px;
 }
 
-.floating-label input,
-.floating-label select {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 14px 12px;
   font-size: 14px;
-  border: 1px solid #d6e0ea;
+  border: 1px solid #dcdcdc;
   border-radius: 6px;
-  background: #fff;
-  transition: all 0.3s ease;
+  outline: none;
+  background: transparent;
+  transition: border 0.3s;
+  box-sizing: border-box;
 }
 
+/* INPUT FOCUS */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1e88e5;
+}
+
+/* FLOATING LABEL */
 .floating-label label {
   position: absolute;
-  left: 14px;
+  left: 12px;
   top: 14px;
-  font-size: 14px;
-  color: #7a8a99;
+  font-size: 16px;
+  color: #888; /* GREY LABEL */
   pointer-events: none;
   transition: 0.25s ease;
   background: #fff;
-  padding: 0 4px;
+  padding: 0 5px;
 }
 
+/* FLOAT EFFECT */
 .floating-label input:focus + label,
 .floating-label input:not(:placeholder-shown) + label,
 .floating-label select:focus + label,
-.floating-label select:not([value=""]) + label {
+.floating-label select:valid + label {
   top: -8px;
-  left: 10px;
-  font-size: 12px;
-  color: #1e88e5;
+  font-size: 16px;
+  color: #888;
 }
 
-/* Focus animation */
-.floating-label input:focus,
-.floating-label select:focus {
-  outline: none;
-  border-color: #1e88e5;
-  box-shadow: 0 0 0 3px rgba(30,136,229,0.1);
+/* FILE UPLOAD */
+.file-upload label {
+  display: block;
+  margin-bottom: 8px;
+  color: #777;
+  font-size: 18px;
 }
 
-/* -------------------------
-   FILE UPLOAD
-------------------------- */
-.file-upload .upload-area {
-  border: 2px dashed #d6e0ea;
-  padding: 25px;
-  border-radius: 8px;
+.upload-area {
+  border: 2px dashed #d5d5d5;
+  padding: 30px;
   text-align: center;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  color: #7a8a99;
 }
 
-.file-upload .upload-area:hover {
-  background: #f0f6ff;
+.upload-area:hover {
   border-color: #1e88e5;
+  background: #f9fbff;
 }
 
-/* Hide the default file input */
-.file-upload input[type="file"] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer;
+.upload-area p {
+  font-size: 16px;
+  color: #666;
 }
 
-/* -------------------------
-   CHECKBOX
-------------------------- */
+.upload-area input {
+  display: none;
+}
+
+#fileList {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+  color: #444;
+}
+
+/* CHECKBOX */
 .form-check {
   display: flex;
   gap: 10px;
-  font-size: 13px;
-  color: #4b5c6b;
-  align-items: flex-start;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
 }
 
-.form-check input {
-  margin-top: 4px;
-}
-
-/* -------------------------
-   SUBMIT BUTTON
-------------------------- */
+/* BUTTON */
 .submit-btn {
-  margin-top: 15px;
-  padding: 14px;
+  background: #770000;
+  color: #fff;
   border: none;
-  background: var(--color-dark-red);
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
+  padding: 14px;
   border-radius: 6px;
+  font-size: 15px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .submit-btn:hover {
-  background: #570202;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background: #350303;
 }
 
-/* -------------------------
-   SUCCESS MESSAGE
-------------------------- */
+/* SUCCESS MESSAGE */
 .success-message {
   display: none;
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 10px;
   color: #2e7d32;
-  font-weight: 500;
+  font-size: 14px;
 }
 
-/* -------------------------
-   FORM ROW
-------------------------- */
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-/* FILE LIST PREVIEW */
-.upload-area ul {
-  margin: 10px 0 0 0;
-  padding-left: 0;
-  transition: all 0.3s ease;
-}
-
-.upload-area li {
-  opacity: 0;
-  transform: translateY(-5px);
-  animation: fadeIn 0.3s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 
 /* SECTION BACKGROUND */
@@ -3459,6 +3447,319 @@ body {
 }
 
 
+.appointment-wrapper{
+  display:flex;
+  gap:60px;
+  padding:50px 4%;
+  align-items:stretch;
+  background-color: #f8fafc;;
+}
+
+/* FORM STAGE WRAPPER */
+
+.form-panel{
+  overflow:hidden;
+  
+}
+
+
+/* STAGE CONTAINER */
+
+.form-stage-container{
+  display:flex;
+  width:200%;
+  transition:transform .45s ease;
+}
+
+
+/* EACH FORM LAYER */
+
+.form-layer{
+  width:100%;
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+
+/* CONTACT PANEL */
+
+.contact-panel{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+
+.contact-panel h3{
+  margin-bottom:30px;
+  font-size:22px;
+}
+
+
+
+/* PROGRESS */
+
+.form-progress{
+  display:flex;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.progress-step{
+  font-size:14px;
+  color:#9ca3af;
+  font-weight:600;
+}
+
+.progress-step.active{
+  color:#770000;
+}
+
+.progress-divider{
+  flex:1;
+  height:2px;
+  background:#e5e7eb;
+  margin:0 15px;
+}
+
+
+
+/* FORM STAGES */
+
+.form-stage-container{
+  position:relative;
+  width:200%;
+  display:flex;
+  transition:transform .45s ease;
+}
+
+.form-layer{
+  width:50%;
+  padding-right:10px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+
+/* NAME ROW */
+
+.name-row{
+  display:flex;
+  gap:12px;
+}
+
+.name-row input{
+  flex:1;
+}
+
+
+
+/* PHONE */
+
+.phone-input{
+  display:flex;
+  gap:10px;
+}
+
+.phone-input select{
+  width:90px;
+}
+
+
+
+/* INPUTS */
+
+input, select{
+  padding:14px;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  font-size:14px;
+}
+
+
+
+/* BUTTONS */
+
+.next-button,
+.submit-button{
+  background:#770000;
+  color:white;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.next-button:hover,
+.submit-button:hover{
+  background:#550000;
+}
+
+.back-button{
+  background:#e5e7eb;
+  border:none;
+  padding:14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+
+.button-row{
+  display:flex;
+  gap:12px;
+}
+
+
+
+/* CONTACT ITEMS */
+
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+
+.contact-icon{
+  width:42px;
+  height:42px;
+  background:#770000;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.contact-icon img{
+  width:18px;
+  filter:brightness(0) invert(1);
+}
+
+.contact-text strong {
+  color: #770000;
+}
+
+.contact-panel h3{
+  color: var(--color-dark-red);
+}
+
+/* General Section */
+.appointment-hours {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 5%;
+  background-color: #f9fafb; /* soft light background */
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #333;
+  flex-wrap: wrap;
+}
+
+/* Left Column */
+.appointment-info {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.appointment-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #770000; /* darker for premium look */
+  margin-bottom: 0.5rem;
+}
+
+.appointment-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5563; /* grey text for readability */
+}
+
+/* Individual Appointment Item */
+.appointment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.appointment-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.appointment-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-dark-red);
+}
+
+.appointment-item p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Right Column */
+.right {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.hours {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 320px;
+}
+
+.hours h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-dark-red);
+  text-align: center;
+}
+
+.hours-list h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-dark-red);
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.hours-list p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+
+
+
+
 
 /* =========================
    RESPONSIVE
@@ -3466,6 +3767,19 @@ body {
 @media (max-width: 1024px) {
   .nav-links {
     gap: 15px;
+  }
+  .appointment-hours {
+    flex-direction: column;
+    padding: 2rem 3%;
+  }
+
+  .appointment-info, .right {
+    flex: 1 1 100%;
+  }
+
+  .right {
+    margin-top: 2rem;
+    align-items: stretch;
   }
 }
 
@@ -3489,6 +3803,14 @@ body {
 
   .appointment:hover {
     opacity: 0.8;
+  }
+
+  .application-form-box {
+    padding: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
   }
 
   .hero {
@@ -3627,10 +3949,7 @@ body {
     font-size: 1.7rem;
   }
 
-  .application-wrapper {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
+ 
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -3638,6 +3957,23 @@ body {
    .contact-container {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .appointment-wrapper{
+    flex-direction:column;
+    padding:50px 6%;
+  }
+
+  .form-stage-container{
+    width:200%;
+  }
+
+  .name-row{
+    flex-direction:column;
+  }
+
+  .contact-panel{
+    margin-top:40px;
   }
 
   .contact-left,
