@@ -32,3 +32,4 @@ export function initSlider(track, testimonials) {
 
   start();
 }
+
