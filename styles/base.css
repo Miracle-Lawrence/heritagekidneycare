@@ -3760,7 +3760,7 @@ input, select{
 /* =========================
    FACILITIES
 ========================= */
-.admission-section, .pharmacy-section, .dialysis-section, .laboratory-section{
+.admission-section, .pharmacy-section, .dialysis-section, .laboratory-section, .icu-section{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -3772,18 +3772,18 @@ input, select{
 
 /* TEXT SIDE */
 
-.admission-text , .pharmacy-text, .dialysis-text, .laboratory-text{
+.admission-text , .pharmacy-text, .dialysis-text, .laboratory-text, .icu-text{
   flex:1;
 }
 
-.admission-text h1, .pharmacy-text h1, .dialysis-text h1, .laboratory-text h1{
+.admission-text h1, .pharmacy-text h1, .dialysis-text h1, .laboratory-text h1, .icu-text h1{
   font-size:2rem;
   margin-bottom:20px;
   color:var(--color-dark-red);
   font-weight:700;
 }
 
-.admission-text p , .pharmacy-text p, .dialysis-text p, .laboratory-text p{
+.admission-text p , .pharmacy-text p, .dialysis-text p, .laboratory-text p, .icu-text p{
   font-size:16px;
   line-height:1.8;
   color:#555;
@@ -3815,12 +3815,12 @@ input, select{
 
 /* IMAGE SIDE */
 
-.admission-image, .pharmacy-image, .dialysis-image, .laboratory-image{
+.admission-image, .pharmacy-image, .dialysis-image, .laboratory-image, .icu-image{
   flex:1;
   position:relative;
 }
 
-.admission-image img, .pharmacy-image img, .dialysis-image img, .laboratory-image img{
+.admission-image img, .pharmacy-image img, .dialysis-image img, .laboratory-image img, .icu-image img{
   width:100%;
   height:300px;
   object-fit:cover;
@@ -3889,22 +3889,22 @@ input, select{
     height: 90vh;
   }
 
-  .admission-section, .pharmacy-section, .dialysis-section, .laboratory-section{
+  .admission-section, .pharmacy-section, .dialysis-section, .laboratory-section .icu-section{
     flex-direction:column-reverse; /* Moves image to top */
     text-align:left;
     gap:40px;
   }
 
-  .admission-text, .pharmacy-text, .dialysis-text, .laboratory-text{
+  .admission-text, .pharmacy-text, .dialysis-text, .laboratory-text, .icu-text{
     width:100%;
   }
 
-  .admission-text p, .pharmacy-text p, .dialysis-text p, .laboratory-text p{
+  .admission-text p, .pharmacy-text p, .dialysis-text p, .laboratory-text p, .icu-text p{
     text-align:justify; /* Justified text */
     margin:0 0 20px 0;
   }
 
-  .admission-image img, .pharmacy-image img, .dialysis-image img, .laboratory-image img{
+  .admission-image img, .pharmacy-image img, .dialysis-image img, .laboratory-image img, .icu-image img{
     height:300px;
     width:100%;
   }
