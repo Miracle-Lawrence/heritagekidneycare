@@ -3833,12 +3833,19 @@ input, select{
    TEAMS
 ========================= */
 
-/* Doctors Section Header */
+
 .doctors-header {
   text-align: center;
   margin: 50px;
 }
 
+.doctors-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #770000; 
+  margin-bottom: 10px;
+}
 .doctors-header p {
   font-size: 1.2rem;
   color: #555;
@@ -3847,22 +3854,23 @@ input, select{
   line-height: 1.6;
 }
 
+/* Doctors Grid */
 .doctors-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 cards on desktop */
   gap: 40px;
   padding: 20px;
 }
 
+/* Individual Card */
 .doctor-card {
-  position: relative;
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  text-align: center;
-  padding: 90px 20px 25px; 
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  max-width: 300px; /* prevent card from being too wide */
+  margin: 0 auto;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 100px;
 }
 
 .doctor-card:hover {
@@ -3870,43 +3878,32 @@ input, select{
   box-shadow: 0 15px 40px rgba(0,0,0,0.18);
 }
 
-.doctor-img-container {
-  position: absolute;
-  top: -80px; 
-  left: 50%;
-  transform: translateX(-50%);
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid #fff; /* white border around image */
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-  background: #fff;
-  transition: box-shadow 0.4s ease;
-}
-
-.doctor-img-container:hover {
-  box-shadow: 0 10px 35px rgba(0,0,0,0.25);
-}
-
-.doctor-img-container:hover .doctor-img {
-  transform: scale(0.95);        /* slight zoom out */
-  filter: brightness(1.1);       /* subtly brighter */
-}
-
+/* Portrait Image */
 .doctor-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  height: 300px;
+  object-fit: contain;   /* full head visible */
+  object-position: top;
+  display: block;
+  border: none;          /* no frame */
+  transition: transform 0.5s ease, filter 0.5s ease;
+  position: relative;    /* needed for hover transform */
 }
 
+/* Hover effect: subtle zoom + thin color */
+.doctor-card:hover .doctor-img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* Card Info */
 .doctor-info {
   padding: 20px;
+  text-align: center;
 }
 
 .doctor-info h3 {
-  margin: 15px 0 5px;
+  margin: 10px 0 5px;
   font-size: 1.25rem;
   color: #1b1b1b;
 }
@@ -3923,6 +3920,204 @@ input, select{
   line-height: 1.5;
 }
 
+/* =========================
+   MILESTONES SECTION
+========================= */
+.hk-milestones {
+  background: linear-gradient(135deg, #f7f7f7, #ffffff);
+  padding: 80px 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+.hk-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.hk-section-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #770000; 
+  margin-bottom: 10px;
+}
+
+.hk-section-header p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+/* Achievements Grid */
+.hk-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.hk-achievement-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.hk-achievement-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.hk-achievement-card h3 {
+  color: #770000; /* Changed heading color */
+  margin-bottom: 10px;
+}
+
+.hk-achievement-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.hk-achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+/* Awards Grid */
+/* Awards Grid */
+.hk-awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.hk-award-card {
+  background: #fff; /* clean card, no frames */
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hk-award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+.hk-award-image {
+  width: 100%;       /* full card width */
+  height: 400px;     /* big image */
+  overflow: hidden;
+  border-radius: 12px; /* rounded corners */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hk-award-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Burgundy overlay on award image */
+.hk-award-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(119,0,0,0.25);
+  border-radius: 12px;
+  pointer-events: none;
+  transition: background 0.3s ease;
+}
+
+.hk-award-card:hover .hk-award-image::before {
+  background: rgba(119,0,0,0.15);
+}
+
+.hk-award-card:hover .hk-award-image img {
+  transform: scale(1.05);
+}
+
+.hk-award-card h3 {
+  color: #770000;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.hk-award-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Service Section */
+.hk-service {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.hk-service h2 {
+  font-size: 2.5rem;
+  color: #770000; /* Burgundy headings */
+  margin-bottom: 20px;
+}
+
+.hk-service p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Statistics Grid */
+.hk-stats-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.hk-stat-card {
+  background: linear-gradient(135deg, #770000, #aa0000); /* Gradient in burgundy shades */
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.hk-stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hk-stat-card p {
+  font-size: 1rem;
+}
+
+.hk-stat-card:hover {
+  transform: scale(1.05);
+}
 
 /* =========================
    RESPONSIVE
