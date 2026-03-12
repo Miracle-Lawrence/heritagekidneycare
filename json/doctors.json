@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Professor Elijah Miner",
+    "specialty": "Chief Medical Director",
+    "image": "images/elijah-miner.webp",
+    "description": "Provides overall medical leadership and oversees clinical standards, patient care, and strategic medical direction of the hospital."
+  },
+  {
+    "name": "Dr Simon Tada",
+    "specialty": "Director of Administration / Transplant Coordinator",
+    "image": "images/simon-tada.webp",
+    "description": "Oversees hospital administration and coordinates transplant programs to ensure efficient and well-organized patient services."
+  },
+  {
+    "name": "DNS Treasure Obi",
+    "specialty": "Director of Nursing Services",
+    "image": "images/treasure-obi.webp",
+    "description": "Leads the nursing department, ensuring high standards of patient care and professional nursing practice across all units."
+  },
+  {
+    "name": "Dr. Zechariah F. Sunday",
+    "specialty": "Consultant Nephrologist",
+    "image": "images/zechariah-sunday.webp",
+    "description": "Specializes in the diagnosis and management of kidney diseases and supervises dialysis and renal care services."
+  },
+  {
+    "name": "Mr Jimmy Olushegun Balogun",
+    "specialty": "Head of Human Resources",
+    "image": "images/jimmy-olushegun-balogun.webp",
+    "description": "Manages staff development, recruitment, and employee welfare while supporting a productive hospital workforce."
+  },
+  {
+    "name": "Nnedinma Hezekiah",
+    "specialty": "Matron – Dialysis Unit",
+    "image": "images/nnedinma-hezekiah.webp",
+    "description": "Supervises nursing operations in the dialysis unit and ensures quality patient care for individuals receiving renal treatment."
+  },
+  {
+    "name": "Patience Mnena Ulaka",
+    "specialty": "Head of Customer Service",
+    "image": "images/patience-mnena.webp",
+    "description": "Leads the customer service team to ensure patients and visitors receive prompt assistance and a positive hospital experience."
+  },
+  {
+    "name": "MLS Amina Saheed",
+    "specialty": "Head of Laboratory Unit",
+    "image": "images/amina-saheed.webp",
+    "description": "Oversees laboratory diagnostics and ensures accurate and timely testing services that support medical decision-making."
+  },
+  {
+    "name": "Pharm Nafisa Haruna",
+    "specialty": "Head of Pharmacy",
+    "image": "images/nafisa-haruna.webp",
+    "description": "Supervises medication management, pharmaceutical services, and ensures safe dispensing of drugs to patients."
+  },
+  {
+    "name": "Mr Nwakanma Hezekiah",
+    "specialty": "Head of Maintenance",
+    "image": "images/nwakanma-hezekiah.webp",
+    "description": "Ensures all hospital facilities, equipment, and infrastructure are properly maintained for safe and efficient operations."
+  },
+  {
+    "name": "Eniola Seun Olumoko",
+    "specialty": "Head of Store",
+    "image": "images/eniola-seun-olumoko.webp",
+    "description": "Manages hospital inventory, medical supplies, and logistics to ensure essential materials are always available."
+  },
+  {
+    "name": "Mr Yakubu Ayuba",
+    "specialty": "Director of Finance",
+    "image": "images/yakubu-ayuba.webp",
+    "description": "Oversees financial planning, budgeting, and resource management to support the hospital’s sustainability and growth."
+  },
+  {
+    "name": "Ukpai Godwin Umedike",
+    "specialty": "Administrative Secretary",
+    "image": "images/ukpai-godwin-umedike.webp",
+    "description": "Provides administrative support and coordination to ensure smooth communication and office operations."
+  },
+  {
+    "name": "Mr Elisha Ayuba Abare",
+    "specialty": "Procurement Officer",
+    "image": "images/elisha-ayuba-abare.webp",
+    "description": "Handles procurement processes, sourcing of medical equipment, and supply chain coordination."
+  },
+  {
+    "name": "Ishaku Ayuba Abare",
+    "specialty": "Facility Manager",
+    "image": "images/ishaku-ayuba-abare.webp",
+    "description": "Oversees facility operations and ensures the hospital environment remains safe, functional, and well managed."
+  },
+  {
+    "name": "Mr Williams Dasat",
+    "specialty": "Chief Security Officer",
+    "image": "images/williams-dasat.webp",
+    "description": "Leads security operations to ensure the safety of patients, staff, visitors, and hospital property."
+  },
+  {
+    "name": "Mrs Courage Macaulay",
+    "specialty": "Client Satisfaction Manager",
+    "image": "images/courage-macaulay.webp",
+    "description": "Focuses on patient feedback, service improvement, and ensuring high levels of client satisfaction across the hospital."
+  }
+]

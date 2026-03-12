@@ -3,6 +3,9 @@ import { initSlider } from "./slider.js";
 import { initNewsletterValidation } from "./validation.js";
 import { renderServices } from "./services.js";
 import { renderArticles } from "./articles.mjs";
+import { renderDoctors } from "./renderDoctors.mjs";
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".reviews-track");
@@ -62,6 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadTestimonials();
   loadServices();
   loadArticles();
-
+  renderDoctors();
   initNewsletterValidation();
 });
