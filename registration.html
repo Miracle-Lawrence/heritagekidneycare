@@ -136,10 +136,258 @@
       </div>
       </div>
     <div class="menu-overlay"></div>
+  <main>
+
+  
     <section class="registration-hero">
         <div class="registration-hero-overlay">
           <h1>Register as a Patient</h1>
         </div>
       </section>
+  
+      <section class="application-section">
+  <div class="application-wrapper">
+    <!-- LEFT INFO SIDE -->
+    <div class="application-info">
+      <h2 class="application-title">Patient Registration Notice</h2>
+      <p>
+        Please read the following carefully before completing your registration at
+        <strong>Heritage Kidney & Medical Care</strong>:
+      </p>
+      <ul class="application-list">
+        <li><strong>Registration, Consultation, and Procedure Fees:</strong> All fees are <strong>non-refundable</strong>, even if referred to another specialist.</li>
+        <li><strong>Referral to Specialists:</strong> See the <strong>General Duty Doctor</strong> first to avoid double consultation fees.</li>
+        <li><strong>Electronic Medical Records & Prescriptions:</strong> All records are electronic. Prescriptions go directly to our Pharmacy; paper copies are not provided.</li>
+        <li><strong>Laboratory Results:</strong> Lab results are posted electronically. Paper copies are available for a fee <strong>Monday to Friday, 8:00 AM – 9:00 PM</strong>.</li>
+        <li><strong>Hospital Environment:</strong> Heritage Kidney & Medical Care is a <strong>no-smoking, alcohol-free, noise-free, and violence-free</strong> zone.</li>
+        <li><strong>Payment of Fees:</strong> All services must be paid in full before being rendered.</li>
+        <li><strong>Excuse Duty Notes:</strong> Papers can only be granted <strong>on the same day</strong> of the visit.</li>
+      </ul>
+      <p class="application-note">
+        Please ensure you follow all guidelines to have a smooth registration experience.
+      </p>
+    </div>
+
+    <!-- RIGHT FORM SIDE -->
+    <div class="application-form-box" id="patientRegistrationForm">
+      <h3 class="form-title">Patient Registration Form</h3>
+      <p class="form-disclaimer">
+        <strong>Disclaimer:</strong> All information provided is securely stored and used only for hospital purposes.
+      </p>
+
+      <form class="application-form" id="heritagePatientForm">
+        <!-- Personal Information -->
+        <div class="form-row">
+          <div class="form-group floating-label">
+            <input type="text" id="surname" required />
+            <label for="surname">Surname *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="firstname" required />
+            <label for="firstname">First Name *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="othername" />
+            <label for="othername">Other Name</label>
+          </div>
+        </div>
+
+        <!-- Basic Details -->
+        <div class="form-row">
+          <div class="form-group floating-label">
+            <select id="sex" required>
+              <option value="" disabled selected>Select</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <label for="sex">Sex *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="date" id="dob" required />
+            <label for="dob">Date of Birth *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="number" id="age" required />
+            <label for="age">Age *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="maritalstatus" required />
+            <label for="maritalstatus">Marital Status *</label>
+          </div>
+        </div>
+
+        <!-- Background Information -->
+        <div class="form-row">
+          <div class="form-group floating-label">
+            <input type="text" id="religion" />
+            <label for="religion">Religion</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="occupation" />
+            <label for="occupation">Occupation</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="stateoforigin" />
+            <label for="stateoforigin">State of Origin</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="localgovt" />
+            <label for="localgovt">Local Government</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="tribe" />
+            <label for="tribe">Tribe</label>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="form-row">
+          <div class="form-group floating-label">
+            <input type="tel" id="phone" required placeholder="0802 123 4567" />
+            <label for="phone">Phone Number *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="email" id="email" required />
+            <label for="email">Email *</label>
+          </div>
+        </div>
+
+        <!-- Address Information -->
+        <div class="form-row">
+          <div class="form-group floating-label">
+            <input type="text" id="homeaddress" required />
+            <label for="homeaddress">Home Address *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="officeaddress" />
+            <label for="officeaddress">Office Address</label>
+          </div>
+        </div>
+
+        <!-- Next of Kin -->
+        <div class="form-row">
+          <div class="form-group floating-label">
+            <input type="text" id="nokname" required />
+            <label for="nokname">Name of Next of Kin *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="nokrelationship" required />
+            <label for="nokrelationship">Relationship *</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="text" id="nokaddress" />
+            <label for="nokaddress">Address of Next of Kin</label>
+          </div>
+          <div class="form-group floating-label">
+            <input type="tel" id="nokphone" required />
+            <label for="nokphone">Phone Number (Next of Kin) *</label>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </div>
+</section>
+   </main>
+
+     <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>ABOUT HERITAGE KIDNEY AND MEDICAL CARE</h3>
+          <p>
+            <strong>Address:</strong><br />
+            Plot 1258 B11 Kaura District, Opp. Suncity Junction, Before African
+            International college, Abuja.
+          </p>
+          <p>
+            <strong>Contact:</strong><br />
+            09167760222, 09167767081, 08033875967
+          </p>
+
+          <p>
+            <strong>Email:</strong><br />
+            heritagekmc@gmail.com
+          </p>
+          <p>
+            <strong>Heritage Kidney and Medical Care</strong><br />
+            Specialized Renal & Medical Services
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>ABOUT US</h3>
+          <ul>
+            <a href="about.html"><li>About Heritage</li></a>
+            <a href="team.html"><li>Management Team</li></a>
+            <a href="partnership.html"><li>Partnership</li></a>
+            <a href="facilities.html"><li>Facilities and Equipment</li></a>
+            <a href="routine.html"><li>Routine Processes</li></a>
+            <a href="insurance.html"><li>Insurance / HMOs</li></a>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>KEY SERVICES</h3>
+          <ul>
+            <a href="dialysis.html"><li>Dialysis Services</li></a>
+            <a href="diagnostics.html"><li>Renal Surgery</li></a>
+            <a href="surgery.html"><li>Surgery</li></a>
+            <a href="services.html"><li>Services</li></a>
+            <a href="facilities.html#pharmacy"><li>Pharmacy: 24 hours</li></a>
+            <a href="facilities.html#laboratory"
+              ><li>Laboratory: 24 hours</li></a
+            >
+            <a href="diagnostics.html"><li>In-patient Services</li></a>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <a href="appointment.html"><li>Request an Appointment</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="news.html"><li>News and Articles</li></a>
+            <a href="career.html"><li>Career Opportunities</li></a>
+            <a href="milestones.html"><li>Our Milestones</li></a>
+            <a href="registration.html"><li>Patient Registration</li></a>
+            <a href="insurance.html"><li>Insurance / HMOs</li></a>
+            <a href="partnership.html"><li>Partnerships</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="social-label"><span>|</span> Follow Us</div>
+
+        <div class="social-icons">
+          <a href="https://wa.me/2349167760222" target="_blank">
+            <img src="images/whatsapp.svg" alt="Whatsapp" />
+          </a>
+
+          <a href="https://www.instagram.com/heritagekmc" target="_blank">
+            <img src="images/instagram.svg" alt="Instagram" />
+          </a>
+
+          <a href="https://www.tiktok.com/@heritagekmc" target="_blank">
+            <img src="images/tik-tok.svg" alt="TikTok" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61584938193553"
+            target="_blank"
+          >
+            <img src="images/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/HeritageMeds" target="_blank">
+            <img src="images/twitter-alt.svg" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span>Heritage Kidney and Medical Care</span> | Designed by
+          <strong>Miracle Lawrence</strong> and <strong>Umedike Ukpai</strong>
+        </p>
+      </div>
+    </footer>
+
   </body>
 </html>
