@@ -4238,6 +4238,119 @@ input, select{
 }
 
 
+insurance-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .insurance-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .insurance-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .insurance-title {
+    font-size: 2.5rem;
+    color: #770000;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .insurance-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .insurance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .insurance-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s ease;
+    position: relative;
+  }
+
+  .insurance-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #770000;
+  }
+
+  .insurance-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .insurance-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .insurance-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .insurance-card:hover img {
+    transform: scale(1.08);
+  }
+
+  .insurance-content {
+    padding: 25px;
+  }
+
+  .insurance-content h3 {
+    font-size: 1.3rem;
+    color: #770000;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .insurance-content p {
+    font-size: 0.98rem;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  /* Subtle divider line */
+  .insurance-content::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #770000;
+    margin-top: 15px;
+    opacity: 0.2;
+  }
+
+  /* Responsive tweak */
+  @media (max-width: 768px) {
+    .insurance-title {
+      font-size: 2rem;
+    }
+  }
 
 
 /* =========================
