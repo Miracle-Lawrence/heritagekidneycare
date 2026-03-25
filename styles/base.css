@@ -15,6 +15,70 @@ body {
   background: url("kelina-bg.jpeg") no-repeat center center;
   background-size: cover;
 }
+.insurance-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.insurance-content h2 {
+  color: #080860;
+  margin-bottom: 1rem;
+}
+
+.insurance-list .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.coverage ul, .steps ol {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.faq details {
+  background: #fff;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact {
+  background: #e6f0ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+}
 
 /* =========================
    NAVBAR (DESKTOP/TABLET)
