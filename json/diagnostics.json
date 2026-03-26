@@ -1,0 +1,257 @@
+{
+  "health_check_plans": [
+    {
+      "category": "Basic (Male)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Serology",
+        "Abdominopelvic uss",
+        "ECG"
+      ],
+      "cost": 129000
+    },
+    {
+      "category": "Basic (Female)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Serology",
+        "Abdominopelvic uss",
+        "ECG"
+      ],
+      "cost": 129000
+    },
+    {
+      "category": "Standard (Male)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Uric acid",
+        "Lipid profile",
+        "PSA",
+        "TFT",
+        "Serology",
+        "Prostrate scan",
+        "Abdominopelvic uss",
+        "ECG"
+      ],
+      "cost": 243500
+    },
+    {
+      "category": "Standard (Female)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Uric acid",
+        "Lipid profile",
+        "TFT",
+        "Hormonal profile",
+        "Serology",
+        "Abdominopelvic uss",
+        "Mammogram",
+        "ECG",
+        "Echocardiogram"
+      ],
+      "cost": 193500
+    },
+    {
+      "category": "Gold (Male)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Uric acid",
+        "Lipid profile",
+        "PSA",
+        "Semen analysis",
+        "H.pylori",
+        "TFT",
+        "Serology",
+        "Prostrate scan",
+        "Scrotal scan",
+        "Abdominopelvic uss",
+        "ECG",
+        "Echocardiogram"
+      ],
+      "cost": 349500
+    },
+    {
+      "category": "Gold (Female)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Uric acid",
+        "Lipid profile",
+        "PSA",
+        "Semen analysis",
+        "H.pylori",
+        "TFT",
+        "Malaria parasite test",
+        "Widal",
+        "Ca19-9",
+        "CEA",
+        "Serology",
+        "Prostrate scan",
+        "Scrotal scan",
+        "Abdominopelvic uss",
+        "ECG",
+        "Echocardiogram"
+      ],
+      "cost": 377500
+    },
+    {
+      "category": "Platinum (Male)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C"
+      ],
+      "cost": 392800
+    },
+    {
+      "category": "Platinum (Female)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "ESR",
+        "Urinalysis",
+        "Stool analysis",
+        "HBA1C",
+        "FBS + 2HPP",
+        "LFT",
+        "E/Ucr",
+        "Uric acid",
+        "Lipid profile",
+        "H.pylori",
+        "Malaria parasite test",
+        "Widal",
+        "TFT",
+        "Hormonal profile",
+        "Ca 125",
+        "Ca 19-9",
+        "Ca 15-3",
+        "CEA",
+        "Serology",
+        "Abdominopelvic uss",
+        "Mammogram",
+        "ECG",
+        "Echocardiogram"
+      ],
+      "cost": 474400
+    },
+    {
+      "category": "Domestic Staff Screening (Male)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "TB",
+        "Stool analysis",
+        "Serology",
+        "Urinalysis"
+      ],
+      "cost": 36500
+    },
+    {
+      "category": "Domestic Staff Screening (Female)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "FBC",
+        "TB",
+        "Stool analysis",
+        "Serology",
+        "Urinalysis",
+        "Pregnancy test (optional)"
+      ],
+      "cost": 39500
+    },
+    {
+      "category": "Basic Pre-Marital Screening (Male)",
+      "tests": ["FBC", "Blood group", "Genotype", "Serology"],
+      "cost": 34500
+    },
+    {
+      "category": "Basic Pre-Marital Screening (Female)",
+      "tests": [
+        "FBC",
+        "Blood group",
+        "Genotype",
+        "Serology",
+        "Pregnancy test (optional)"
+      ],
+      "cost": 37500
+    },
+    {
+      "category": "Kidney Health Screening (Male & Female)",
+      "tests": [
+        "Vital signs: BP, BMI, Height & Weight",
+        "E/Ucr",
+        "FBS + 2HPP",
+        "FBC",
+        "Urinalysis",
+        "Malaria parasite test",
+        "Serology",
+        "Abdominopelvic uss"
+      ],
+      "cost": 68500
+    },
+    {
+      "category": "Preemployment Healthcheck Package",
+      "tests": [
+        "Serology",
+        "Blood group",
+        "Genotype",
+        "Urine drug test",
+        "FBC",
+        "Malaria parasite test",
+        "Urinalysis",
+        "Chest x-ray"
+      ],
+      "cost": 75000
+    }
+  ]
+}
