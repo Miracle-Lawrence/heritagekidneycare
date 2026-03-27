@@ -4409,14 +4409,373 @@ insurance-section {
     opacity: 0.2;
   }
 
-  /* Responsive tweak */
-  @media (max-width: 768px) {
-    .insurance-title {
-      font-size: 2rem;
+/* =========================
+   SURGERY PAGE
+========================= */
+  .service-section {
+    padding: 60px 8%;
+}
+
+/* WRAPPER */
+.service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+/* HEADER INSIDE FIRST SECTION */
+.service-wrapper h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 28px;
+    color: #770000;
+}
+
+.service-wrapper p:first-of-type {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* TEXT SIDE */
+.service-text {
+    flex: 1;
+}
+
+.service-text h2 {
+    font-size: 28px;
+    color: #770000;
+    margin-bottom: 15px;
+}
+
+.service-text h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.service-text p {
+    margin-bottom: 15px;
+    color: #555;
+    
+}
+
+.service-text p:first-of-type {
+  font-size: 17px;       /* adjust text size */
+  line-height: 1.8;      /* more spacing between lines */
+  color: #555;           /* softer gray tone */
+  font-style: italic;    /* optional emphasis */
+  margin-bottom: 20px;   /* space below */
+  border-left: 4px solid #d32f2f; /* decorative accent */
+  padding-left: 10px;
+}
+
+.service-text ul {
+    padding-left: 20px;
+}
+
+.service-text ul li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+
+
+
+/* CUSTOM BULLET */
+.service-text ul li::marker {
+    color: #770000;
+}
+
+/* IMAGE SIDE */
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 14px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* IMAGE HOVER EFFECT */
+.service-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ALTERNATING LAYOUT */
+.service-section:nth-child(even) .service-wrapper {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================
+   DIALYSIS PAGE 
+========================= */
+
+.dialysis-area {
+    padding: 80px 8%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* INTRO */
+.dialysis-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px;
+}
+
+.dialysis-intro h2 {
+    font-size: 36px;
+    color: #770000;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.dialysis-intro p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ROW */
+.ward-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 70px;
+    padding: 35px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.ward-row:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+/* REVERSE */
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.ward-image {
+    flex: 1;
+    position: relative;
+}
+
+.ward-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: 0.5s ease;
+}
+
+.ward-row:hover img {
+    transform: scale(1.05);
+}
+
+/* BORDER ACCENT */
+.ward-image::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid #770000;
+    opacity: 0.15;
+}
+
+/* TEXT */
+.ward-content {
+    flex: 1;
+}
+
+.ward-content h3 {
+    font-size: 24px;
+    color: #770000;
+    margin-bottom: 10px;
+}
+
+.ward-content p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* LIST */
+.ward-content ul {
+    list-style: none;
+}
+
+.ward-content ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* CUSTOM ICON */
+.ward-content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #770000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .ward-row {
+        flex-direction: column !important;
+        gap: 25px;
     }
-  }
 
+    .ward-image img {
+        height: 250px;
+    }
+}
 
+@media (max-width: 600px) {
+    .dialysis-intro h2 {
+        font-size: 28px;
+    }
+
+    .ward-content h3 {
+        font-size: 20px;
+    }
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.plan-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.plan-tests {
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+
+.plan-cost {
+  font-weight: bold;
+  color: var(--color-dark-red);
+  font-size: 1.2rem;
+}
+
+/* GRID LAYOUT */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+/* CARD */
+.plan-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.plan-card-header {
+  background: linear-gradient(135deg, #770000, #0c9);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.plan-card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* BODY */
+.plan-card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.plan-card-body ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.plan-card-body li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+  position: relative;
+}
+
+/* subtle bullet upgrade */
+.plan-card-body li::marker {
+  color: #770000;
+}
+
+/* FOOTER */
+.plan-card-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PRICE */
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0a7;
+}
+
+/* BUTTON */
+.btn {
+  background: #770000;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #310202;
+}
 /* =========================
    RESPONSIVE
 ========================= */
@@ -4463,6 +4822,9 @@ insurance-section {
   .appointment:hover {
     opacity: 0.8;
   }
+  .insurance-title {
+      font-size: 2rem;
+    }
 
   .application-form-box {
     padding: 25px;
@@ -4477,6 +4839,22 @@ insurance-section {
   .hero {
     height: 90vh;
   }
+
+  .service-wrapper {
+        flex-direction: column !important;
+        padding: 25px;
+    }
+
+    .service-wrapper h1,
+    .service-wrapper p:first-of-type {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .service-text h2 {
+        font-size: 24px;
+    }
+
 /* ROUTINE */
   .reception-process, .cash-process, .triage-process, .consultation-process, .lab-process, .pharmacy-process, .ward-process, .dialysis-process, .consultant-process {
     flex-direction: column;

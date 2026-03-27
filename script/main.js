@@ -4,6 +4,9 @@ import { initNewsletterValidation } from "./validation.js";
 import { renderServices } from "./services.js";
 import { renderArticles } from "./articles.mjs";
 import { renderDoctors } from "./renderDoctors.mjs";
+import { initDiagnostics } from './diagnostics.js';
+
+
 
 
 
@@ -67,4 +70,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loadArticles();
   renderDoctors();
   initNewsletterValidation();
+  initDiagnostics("#diagnostics-container");
 });
