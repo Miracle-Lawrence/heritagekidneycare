@@ -18,6 +18,12 @@
     "description": "Leads the nursing department, ensuring high standards of patient care and professional nursing practice across all units."
   },
   {
+    "name": "Mrs. Joy Emeh",
+    "specialty": "Human Resource Manager",
+    "image": "images/Mrs_Joy_Emeh.jpeg",
+    "description": "Manages human resources, including staff recruitment, development, and welfare to support a productive hospital workforce."
+  },
+  {
     "name": "Dr. Zechariah F. Sunday",
     "specialty": "Consultant Nephrologist",
     "image": "images/zechariah-sunday.webp",
