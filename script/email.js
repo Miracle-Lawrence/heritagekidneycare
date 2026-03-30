@@ -2,7 +2,7 @@
 // EMAILJS INITIALIZATION
 // ===============================
 const YOUR_PUBLIC_KEY = "omgmA_K_NzcfiRxRn"
-const YOUR_SERVICE_ID = "service_ytu9amf";
+const YOUR_SERVICE_ID = "service_dxxw78s";
 const template_simple = "template_usdbt6g";
 const template_detailed = "template_7gd7rra";
     
