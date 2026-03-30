@@ -2914,24 +2914,25 @@ body {
 }
 
 .application-wrapper {
-  max-width: 1300px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 70px;
-  align-items: start;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Make both sides share space nicely on desktop */
+.application-info,
+.patient-form-container {
+    flex: 1;
 }
 
 /* -------------------------
    LEFT INFO
 ------------------------- */
-.application-info {
-  padding-right: 20px;
-}
+
 
 .application-title {
   font-size: 2rem;
-  color: #0a2a43;
+  color: #770000;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -4795,34 +4796,103 @@ insurance-section {
 }
 
 
-@media (max-width: 600px) {
-  .modal-nav button {
-    width: 48%;
+
+/* Container */
+.patient-form-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f9fbfc;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+/* Title */
+.patient-form-heading {
+    text-align: center;
+    font-size: 26px;
+    color: #770000;
+    margin-bottom: 10px;
+}
+
+/* Disclaimer */
+.patient-form-note {
+    text-align: center;
     font-size: 14px;
-  }
+    color: #555;
+    margin-bottom: 25px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-    .ward-row {
-        flex-direction: column !important;
-        gap: 25px;
-    }
-
-    .ward-image img {
-        height: 250px;
-    }
+/* Form Layout */
+.patient-form {
+    width: 100%;
 }
 
-@media (max-width: 600px) {
-    .dialysis-intro h2 {
-        font-size: 28px;
-    }
-
-    .ward-content h3 {
-        font-size: 20px;
-    }
+/* Rows */
+.patient-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-bottom: 30px;
 }
+
+/* Fields */
+.patient-field {
+    flex: 1 1 200px;
+    position: relative;
+}
+
+/* Inputs & Select */
+.patient-field input,
+.patient-field select {
+    width: 100%;
+    padding: 14px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Focus Effect */
+.patient-field input:focus,
+.patient-field select:focus {
+    border-color: #00a8a8;
+    box-shadow: 0 0 0 2px rgba(0, 168, 168, 0.1);
+}
+
+/* Floating Label */
+.float-label label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f9fbfc;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #777;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* Move label up when typing */
+.float-label input:focus + label,
+.float-label input:not(:placeholder-shown) + label,
+.float-label select:focus + label,
+.float-label select:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #00a8a8;
+}
+
+/* Improve select appearance */
+.patient-field select {
+    appearance: none;
+    cursor: pointer;
+}
+
 
 .plan-card {
   background: #fff;
@@ -4972,6 +5042,29 @@ insurance-section {
   .search-icon {
     display: none;
   }
+
+   .dialysis-intro h2 {
+        font-size: 28px;
+    }
+
+    .ward-content h3 {
+        font-size: 20px;
+    }
+     .ward-row {
+        flex-direction: column !important;
+        gap: 25px;
+    }
+
+    .ward-image img {
+        height: 250px;
+    }
+    .modal-nav button {
+    width: 48%;
+    font-size: 14px;
+  }
+  .patient-row {
+        flex-direction: column;
+    }
 
   .hamburger {
     display: block;
@@ -5213,11 +5306,59 @@ insurance-section {
     gap: 40px;
   }
 
-  .appointment-wrapper{
-    flex-direction:column;
-    padding:50px 6%;
-  }
+   .application-wrapper {
+        flex-direction: column; /* stack vertically */
+    }
 
+    /* Ensure correct order */
+    .application-info {
+        order: 1;
+    }
+
+    .patient-form-container {
+        order: 2;
+        
+    }
+       /* Reduce spacing between rows */
+    .patient-row {
+        gap: 12px;              /* reduce horizontal gap */
+        margin-bottom: 18px;    /* reduce vertical spacing */
+    }
+
+    /* Make each field full width */
+    .patient-field {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    /* Reduce input padding (they’re too tall on mobile) */
+    .patient-field input,
+    .patient-field select {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+
+    /* Reduce label spacing when floating */
+    .float-label label {
+        font-size: 13px;
+    }
+
+    /* Reduce section spacing */
+    .patient-form-container {
+        padding: 20px;
+    }
+
+    /* Reduce space between form title and content */
+    .patient-form-heading {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .patient-form-note {
+        margin-bottom: 18px;
+    }
+
+    
   .form-stage-container{
     width:200%;
   }
