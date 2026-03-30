@@ -2174,19 +2174,10 @@ body {
    PARTNERSHIP, DIAGNOSTICS, DIALYSIS, TEAM AND INSURANCE  PAGE HEADER
 ========================= */
 
-.partnership-hero {
-  position: relative;
-  height: 50vh;              /* Short header height */
-  min-height: 220px;
-  background: url("../images/partnership.webp") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+
 
 /* Dark overlay for readability */
-.partnership-hero::before, .dialysis-hero::before, .insurance-hero::before, .diagnostics-hero::before, .team-hero::before {
+.dialysis-hero::before, .insurance-hero::before, .diagnostics-hero::before, .team-hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2198,13 +2189,13 @@ body {
 }
 
 /* Content */
-.partnership-hero-overlay, .dialysis-hero-overlay, .insurance-hero-overlay, .diagnostics-hero-overlay, .team-hero-overlay {
+.dialysis-hero-overlay, .insurance-hero-overlay, .diagnostics-hero-overlay, .team-hero-overlay {
   position: relative;
   z-index: 2;
   text-align: center;
 }
 
-.partnership-hero-overlay h1, .dialysis-hero-overlay h1, .insurance-hero-overlay h1, .diagnostics-hero-overlay h1, .team-hero-overlay h1 {
+.dialysis-hero-overlay h1, .insurance-hero-overlay h1, .diagnostics-hero-overlay h1, .team-hero-overlay h1 {
   color: #ffffff;
   font-size: clamp(28px, 4vw, 48px);
   letter-spacing: 5px;
@@ -2214,7 +2205,7 @@ body {
 }
 
 /* Elegant gold underline */
-.partnership-hero-overlay h1::after, .dialysis-hero-overlay h1::after, .insurance-hero-overlay h1::after, .diagnostics-hero-overlay h1::after, .team-hero-overlay h1::after {
+.dialysis-hero-overlay h1::after, .insurance-hero-overlay h1::after, .diagnostics-hero-overlay h1::after, .team-hero-overlay h1::after {
   content: "";
   display: block;
   width: 60px;
@@ -2774,8 +2765,17 @@ body {
 
 .article-image img {
   width: 100%;
-  height: 200px;
+  height: 220px; /* adjust if needed */
   object-fit: cover;
+  border-radius: 8px;
+
+  /* Smooth zoom transition */
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+.article-image img:hover {
+  transform: scale(1.1);
 }
 
 /* CONTENT */
@@ -4636,6 +4636,140 @@ insurance-section {
     position: absolute;
     left: 0;
     color: #770000;
+}
+
+
+/* Overlay */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* Active state */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal box animation */
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+
+  /* Animate in */
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  /* 🔹 NEW: constrain height */
+  max-height: 90vh; /* max 90% of viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animate in */
+.modal.show .modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Close button */
+.close-btn {
+  font-size: 28px; /* bigger for mobile */
+  padding: 10px;
+  cursor: pointer;
+  position: absolute; /* fixed over modal content */
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+}
+
+/* Navigation buttons */
+.modal-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-nav button {
+  padding: 8px 14px;
+  border: none;
+  background: #770000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-nav button:hover {
+  background: #5c0101;
+}
+
+.modal h2{
+  color: var(--color-dark-red);
+}
+
+.modal-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+  /* Smooth transition for zoom */
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect: zoom in */
+.modal-image:hover {
+  transform: scale(1.1);
+}
+
+/* Make content scrollable */
+.modal-scroll {
+  overflow-y: auto;
+  margin-top: 15px;
+
+  /* 🔹 NEW: fill remaining height */
+  flex: 1 1 auto;
+}
+
+/* Optional custom scrollbar */
+.modal-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 123, 255, 0.5);
+  border-radius: 4px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+}
+
+.modal-nav button {
+  padding: 12px 20px; /* bigger tap area */
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .modal-nav button {
+    width: 48%;
+    font-size: 14px;
+  }
 }
 
 /* RESPONSIVE */

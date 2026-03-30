@@ -1,99 +1,111 @@
 {
   "articles": [
     {
-      "image": "images/kidney-signs.jpg",
+      "image": "images/kidney-signs.webp",
       "category": "Kidney Health",
       "title": "Early Signs of Kidney Disease You Should Never Ignore",
       "date": "2026-03-02",
-      "content": "Kidney disease often develops silently, with symptoms appearing only when the condition has progressed. Early detection through routine tests like Kidney Function Test and Urinalysis can help prevent severe complications.",
+      "content": "Unexplained swelling, changes in urine, and fatigue are early warning signs of kidney disease...",
+      "fullContent": "<h4>Early Warning Signs of Kidney Disease</h4><ul><li>Unexplained swelling in the feet, ankles, face, or around the eyes</li><li>Changes in urine such as foamy appearance, blood, or reduced output</li><li>Frequent nighttime urination disrupting sleep</li><li>Persistent fatigue or weakness despite rest</li><li>Loss of appetite accompanied by nausea or vomiting</li><li>Ongoing itching across the body without clear cause</li><li>Shortness of breath or difficulty breathing</li><li>High blood pressure that remains uncontrolled with treatment</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/hypertension-diabetes.jpg",
+      "image": "images/hypertension-diabetes.webp",
       "category": "Preventive Care",
       "title": "The Link Between Hypertension, Diabetes, and Kidney Failure",
       "date": "2026-02-25",
-      "content": "Hypertension and diabetes are the leading causes of kidney failure. Managing blood pressure and blood sugar can significantly reduce the risk of kidney damage and protect long-term kidney health.",
+      "content": "Hypertension and diabetes silently damage the kidneys over time, increasing the risk of kidney failure...",
+      "fullContent": "<ul><li>High blood pressure gradually damages the tiny blood vessels in the kidneys, reducing their ability to filter waste.</li><li>High blood sugar harms the kidney’s filtering units (nephrons), causing scarring and loss of function.</li><li>Both conditions can damage the kidneys over many years without obvious symptoms.</li><li>Having both hypertension and diabetes greatly increases the risk of chronic kidney disease and kidney failure.</li><li>Careful control of blood pressure and blood sugar levels is essential to protect kidney health.</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/hemodialysis.jpg",
+      "image": "images/hemodialysis.webp",
       "category": "Dialysis Services",
       "title": "Understanding Hemodialysis: What Patients Should Expect",
       "date": "2026-02-18",
-      "content": "Hemodialysis is a life-saving treatment for patients with kidney failure. Learn how dialysis works, what patients should expect during treatment, and how to prepare.",
+      "content": "Hemodialysis helps remove waste and excess fluids when the kidneys can no longer function properly...",
+      "fullContent": "<p>Hemodialysis is a life-saving treatment for patients with kidney failure.</p><p>It removes waste, toxins, and excess fluid from the blood using a dialysis machine when the kidneys can no longer function effectively.</p><p>Patients usually require regular sessions and must follow medical guidance carefully for best results.</p>",
       "readMore": "Read More"
     },
     {
-      "image": "images/kidney-transplant.jpg",
+      "image": "images/kidney-transplant.webp",
       "category": "Kidney Transplant",
       "title": "Kidney Transplant: A New Chance at Life",
       "date": "2026-02-10",
-      "content": "Kidney transplantation offers patients with end-stage kidney disease a chance to regain a healthier life. This article explains the transplant process and the importance of pre and post-transplant care.",
+      "content": "Kidney transplant offers a second chance at life and greater freedom compared to dialysis...",
+      "fullContent": "<h4>Benefits</h4><ul><li>Restores kidney function and improves quality of life</li><li>Offers more freedom compared to lifelong dialysis</li><li>Allows return to work and daily activities</li></ul><h4>Requirements</h4><ul><li>Strict follow-up care</li><li>Lifelong medications to prevent organ rejection</li><li>Strong support from family and caregivers</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/lab-tests.jpg",
+      "image": "images/lab-tests.webp",
       "category": "Diagnostics",
       "title": "Why Routine Laboratory Tests Are Important for Kidney Health",
       "date": "2026-02-03",
-      "content": "Routine laboratory tests such as Full Blood Count, Kidney Function Test, and Blood Sugar tests help doctors detect early signs of kidney disease before symptoms appear.",
+      "content": "Routine lab tests help detect kidney problems early and monitor overall kidney function...",
+      "fullContent": "<ul><li>Checks how well kidneys are working (creatinine, urea)</li><li>Detects problems early before symptoms appear</li><li>Monitors treatment progress</li><li>Maintains balance of body chemicals (sodium, potassium)</li><li>Reveals hidden damage from hypertension or diabetes</li><li>Guides safe medication use</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/post-transplant-tests.jpg",
+      "image": "images/post-transplant-tests.webp",
       "category": "Post-Transplant Care",
       "title": "Life After Kidney Transplant: Essential Post-Transplant Tests",
       "date": "2026-01-28",
-      "content": "Continuous monitoring after a kidney transplant is essential for long-term success. Post-transplant tests help detect complications early and maintain kidney health.",
+      "content": "Post-transplant monitoring ensures the new kidney functions properly and prevents complications...",
+      "fullContent": "<p>After a kidney transplant, continuous monitoring is essential.</p><ul><li>Detects early signs of rejection</li><li>Ensures proper kidney function</li><li>Helps adjust medications</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/chronic-kidney.jpg",
+      "image": "images/chronic-kidney.webp",
       "category": "Chronic Disease Management",
       "title": "Managing Chronic Kidney Disease for a Healthier Life",
       "date": "2026-01-20",
-      "content": "Chronic Kidney Disease affects millions globally. Proper management through medication, lifestyle changes, and regular monitoring can slow disease progression.",
+      "content": "Proper management of CKD includes medication, lifestyle changes, and regular monitoring...",
+      "fullContent": "<h4>Management Tips</h4><ul><li>Attend regular follow-up visits</li><li>Take prescribed medications consistently</li><li>Avoid unapproved herbal treatments</li><li>Reduce salt and processed foods</li><li>Follow proper hydration advice</li><li>Watch for warning signs like swelling or fatigue</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/specialist-consultation.jpg",
+      "image": "images/specialist-consultations.webp",
       "category": "Specialist Consultations",
       "title": "The Importance of Specialist Consultations in Kidney Care",
       "date": "2026-01-14",
-      "content": "Kidney disease can impact other organs, making multidisciplinary care essential. Specialists in nephrology, cardiology, urology, and oncology work together for comprehensive treatment.",
+      "content": "Specialists provide expert diagnosis, treatment, and long-term care for kidney conditions...",
+      "fullContent": "<ul><li>Accurate diagnosis even without obvious symptoms</li><li>Personalized treatment plans</li><li>Monitoring of complications</li><li>Diet and lifestyle guidance</li><li>Dialysis and transplant management</li><li>Long-term patient support</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/health-insurance.jpg",
+      "image": "images/health-insurance.webp",
       "category": "Health Insurance",
       "title": "How Health Insurance Helps Patients Access Quality Kidney Care",
       "date": "2026-01-07",
-      "content": "Health insurance helps patients access quality kidney care without overwhelming financial stress. Many HMOs now support dialysis, diagnostics, and transplant care.",
+      "content": "Health insurance reduces the financial burden of kidney care and improves access to treatment...",
+      "fullContent": "<ul><li>Access to dialysis and lab tests</li><li>Support for transplant procedures</li><li>Specialist consultations</li><li>Reduced financial stress</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/lifestyle-kidney.jpg",
+      "image": "images/lifestyle-kidney.webp",
       "category": "Kidney Health",
       "title": "How Lifestyle Choices Affect Kidney Health",
       "date": "2025-12-28",
-      "content": "Daily lifestyle habits such as diet, hydration, exercise, and avoiding excessive medication can significantly influence kidney health. Small healthy choices today can prevent serious kidney problems in the future.",
+      "content": "Diet, hydration, and lifestyle habits play a major role in maintaining healthy kidneys...",
+      "fullContent": "<h4>Healthy Habits</h4><ul><li>Eat low-salt balanced meals</li><li>Stay hydrated</li><li>Exercise regularly</li><li>Control blood pressure and sugar</li><li>Avoid smoking and excess alcohol</li><li>Maintain healthy weight</li></ul><h4>Action Steps</h4><ul><li>Drink enough water daily</li><li>Exercise at least 30 minutes regularly</li><li>Monitor health metrics</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/kidney-function-test.jpg",
+      "image": "images/kidney-function-test.webp",
       "category": "Diagnostics",
       "title": "Understanding Kidney Function Tests and What the Results Mean",
       "date": "2025-12-18",
-      "content": "Kidney function tests like EUCr and urinalysis help doctors evaluate how well your kidneys are filtering waste from your blood. Understanding these results can help patients take proactive steps toward better health.",
+      "content": "Kidney function tests help evaluate how well your kidneys are filtering waste...",
+      "fullContent": "<ul><li>Measure waste levels (urea, creatinine)</li><li>Detect early kidney problems</li><li>Track disease progression</li><li>Guide treatment decisions</li></ul>",
       "readMore": "Read More"
     },
     {
-      "image": "images/blood-pressure.jpg",
+      "image": "images/blood-pressure.webp",
       "category": "Preventive Care",
       "title": "Why Regular Blood Pressure Monitoring Protects Your Kidneys",
       "date": "2025-12-08",
-      "content": "High blood pressure is one of the most common causes of kidney damage. Regular monitoring and early treatment can prevent long-term complications and help maintain healthy kidney function.",
+      "content": "Monitoring blood pressure regularly helps prevent kidney damage and long-term complications...",
+      "fullContent": "<ul><li>Detects hypertension early</li><li>Prevents kidney damage</li><li>Guides proper treatment</li><li>Maintains healthy kidney function</li></ul>",
       "readMore": "Read More"
     }
   ]
