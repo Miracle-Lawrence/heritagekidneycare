@@ -4765,6 +4765,36 @@ insurance-section {
   font-size: 16px;
 }
 
+.diagnostics {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9fbfc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.diagnostics h2 {
+    font-size: 28px;
+    color: #770000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.diagnostics p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.diagnostics p:last-child {
+    margin-bottom: 0;
+}
+
+
 @media (max-width: 600px) {
   .modal-nav button {
     width: 48%;
