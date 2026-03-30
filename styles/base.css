@@ -5010,6 +5010,25 @@ insurance-section {
 .btn:hover {
   background: #310202;
 }
+
+
+.reviews-wrapper {
+  overflow: hidden;
+  cursor: grab;
+}
+
+.reviews-wrapper:active {
+  cursor: grabbing;
+}
+
+.reviews-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+
 /* =========================
    RESPONSIVE
 ========================= */
