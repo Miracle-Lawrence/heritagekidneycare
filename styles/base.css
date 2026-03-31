@@ -5325,9 +5325,10 @@ insurance-section {
     gap: 40px;
   }
 
-   .application-wrapper {
+   .application-wrapper, .appointment-wrapper{
         flex-direction: column; /* stack vertically */
     }
+    
 
     /* Ensure correct order */
     .application-info {
