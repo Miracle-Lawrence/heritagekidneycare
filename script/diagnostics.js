@@ -6,10 +6,6 @@ async function fetchDiagnostics() {
   return data.health_check_plans;
 }
 
-function formatCurrency(amount) {
-  return `₦${amount.toLocaleString()}`;
-}
-
 function renderDiagnostics(plans, container) {
   container.innerHTML = "";
 
@@ -29,7 +25,6 @@ function renderDiagnostics(plans, container) {
       </div>
 
       <div class="plan-card-footer">
-        <span class="price">${formatCurrency(plan.cost)}</span>
         <a href="appointment.html#book-appointment"><button class="btn">Book Now</button></a>
       </div>
     `;
