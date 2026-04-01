@@ -40,7 +40,6 @@
 
     <title>Register as a Patient - Heritage Kidney & Medical Care</title>
   </head>
-  <body>
     <!-- Header -->
     <header class="navbar">
       <div class="logo">
@@ -169,123 +168,125 @@
     </div>
 
     <!-- RIGHT FORM SIDE -->
-    <div class="application-form-box" id="patientRegistrationForm">
-      <h3 class="form-title">Patient Registration Form</h3>
-      <p class="form-disclaimer">
-        <strong>Disclaimer:</strong> All information provided is securely stored and used only for hospital purposes.
-      </p>
+   <div class="patient-form-container" id="patientRegistrationForm">
+  <h3 class="patient-form-heading">Patient Registration Form</h3>
+  <p class="patient-form-note">
+    <strong>Disclaimer:</strong> All information provided is securely stored and used only for hospital purposes.
+  </p>
 
-      <form class="application-form" id="heritagePatientForm">
-        <!-- Personal Information -->
-        <div class="form-row">
-          <div class="form-group floating-label">
-            <input type="text" id="surname" required />
-            <label for="surname">Surname *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="firstname" required />
-            <label for="firstname">First Name *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="othername" />
-            <label for="othername">Other Name</label>
-          </div>
-        </div>
+  <form class="patient-form" id="heritagePatientForm">
+    <!-- Personal Information -->
+    <div class="patient-row">
+      <div class="patient-field float-label">
+        <input type="text" id="surname" placeholder=" " required />
+        <label for="surname">Surname *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="firstname" placeholder=" " required />
+        <label for="firstname">First Name *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="othername" placeholder=" " />
+        <label for="othername">Other Name</label>
+      </div>
+    </div>
 
-        <!-- Basic Details -->
-        <div class="form-row">
-          <div class="form-group floating-label">
-            <select id="sex" required>
-              <option value="" disabled selected>Select</option>
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-            <label for="sex">Sex *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="date" id="dob" required />
-            <label for="dob">Date of Birth *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="number" id="age" required />
-            <label for="age">Age *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="maritalstatus" required />
-            <label for="maritalstatus">Marital Status *</label>
-          </div>
-        </div>
+    <!-- Basic Details -->
+    <div class="patient-row">
+      <div class="patient-field float-label">
+        <select id="sex" required>
+          <option value="" disabled selected>Select</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <label for="sex">Sex *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="date" id="dob"  placeholder=" "required />
+        <label for="dob">Date of Birth *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="number" id="age"  placeholder=" "required />
+        <label for="age">Age *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="maritalstatus" placeholder=" " required />
+        <label for="maritalstatus">Marital Status *</label>
+      </div>
+    </div>
 
-        <!-- Background Information -->
-        <div class="form-row">
-          <div class="form-group floating-label">
-            <input type="text" id="religion" />
-            <label for="religion">Religion</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="occupation" />
-            <label for="occupation">Occupation</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="stateoforigin" />
-            <label for="stateoforigin">State of Origin</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="localgovt" />
-            <label for="localgovt">Local Government</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="tribe" />
-            <label for="tribe">Tribe</label>
-          </div>
-        </div>
+    <!-- Background Information -->
+    <div class="patient-row">
+      <div class="patient-field float-label">
+        <input type="text" id="religion" placeholder=" " />
+        <label for="religion">Religion</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="occupation" placeholder=" " />
+        <label for="occupation">Occupation</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="stateoforigin" placeholder=" " />
+        <label for="stateoforigin">State of Origin</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="localgovt" placeholder=" " />
+        <label for="localgovt">Local Government</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="tribe" placeholder=" " />
+        <label for="tribe">Tribe</label>
+      </div>
+    </div>
 
-        <!-- Contact Information -->
-        <div class="form-row">
-          <div class="form-group floating-label">
-            <input type="tel" id="phone" required placeholder="0802 123 4567" />
-            <label for="phone">Phone Number *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="email" id="email" required />
-            <label for="email">Email *</label>
-          </div>
-        </div>
+    <!-- Contact Information -->
+    <div class="patient-row">
+      <div class="patient-field float-label">
+        <input type="tel" id="phone" required placeholder="091 6776 0222" />
+        <label for="phone">Phone Number *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="email" id="email" placeholder=" " required />
+        <label for="email">Email *</label>
+      </div>
+    </div>
 
-        <!-- Address Information -->
-        <div class="form-row">
-          <div class="form-group floating-label">
-            <input type="text" id="homeaddress" required />
-            <label for="homeaddress">Home Address *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="officeaddress" />
-            <label for="officeaddress">Office Address</label>
-          </div>
-        </div>
+    <!-- Address Information -->
+    <div class="patient-row">
+      <div class="patient-field float-label">
+        <input type="text" id="homeaddress" placeholder=" " required />
+        <label for="homeaddress">Home Address *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="officeaddress" placeholder=" " />
+        <label for="officeaddress">Office Address</label>
+      </div>
+    </div>
 
-        <!-- Next of Kin -->
-        <div class="form-row">
-          <div class="form-group floating-label">
-            <input type="text" id="nokname" required />
-            <label for="nokname">Name of Next of Kin *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="nokrelationship" required />
-            <label for="nokrelationship">Relationship *</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="text" id="nokaddress" />
-            <label for="nokaddress">Address of Next of Kin</label>
-          </div>
-          <div class="form-group floating-label">
-            <input type="tel" id="nokphone" required />
-            <label for="nokphone">Phone Number (Next of Kin) *</label>
-          </div>
-        </div>
-
-        <button type="submit" class="submit-btn">Register</button>
+    <!-- Next of Kin -->
+    <div class="patient-row">
+      <div class="patient-field float-label">
+        <input type="text" id="nokname" placeholder=" " required />
+        <label for="nokname">Name of Next of Kin *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="nokrelationship" placeholder=" " required />
+        <label for="nokrelationship">Relationship *</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="text" id="nokaddress" placeholder=" " />
+        <label for="nokaddress">Address of Next of Kin</label>
+      </div>
+      <div class="patient-field float-label">
+        <input type="tel" id="nokphone" placeholder=" " required />
+        <label for="nokphone">Phone Number (Next of Kin) *</label>
+      </div>
+    </div>
+  <button type="submit" class="submit-btn">Register</button>
       </form>
+</div>
+
+        
     </div>
   </div>
 </section>
@@ -386,6 +387,7 @@
         </p>
       </div>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script/email.js"></script>
   </body>
 </html>
