@@ -15,7 +15,8 @@
         "Serology",
         "Abdominopelvic uss",
         "ECG"
-      ]
+      ],
+      "Cost": "$100"
     },
     {
       "category": "Basic (Female)",
