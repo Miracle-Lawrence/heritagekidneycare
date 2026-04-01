@@ -5,7 +5,7 @@ import { renderServices } from "./services.js";
 import { renderArticles } from "./articles.mjs";
 import { renderDoctors } from "./renderDoctors.mjs";
 import { initDiagnostics } from './diagnostics.js';
-
+import { renderJobs } from "./jobRender.js";
 
 
 
@@ -71,4 +71,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderDoctors();
   initNewsletterValidation();
   initDiagnostics("#diagnostics-container");
+  renderJobs();
 });
