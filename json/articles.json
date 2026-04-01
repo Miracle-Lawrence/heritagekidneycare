@@ -24,7 +24,7 @@
       "title": "Understanding Hemodialysis: What Patients Should Expect",
       "date": "2026-02-18",
       "content": "Hemodialysis helps remove waste and excess fluids when the kidneys can no longer function properly...",
-      "fullContent": "<p>Hemodialysis is a life-saving treatment for patients with kidney failure.</p><p>It removes waste, toxins, and excess fluid from the blood using a dialysis machine when the kidneys can no longer function effectively.</p><p>Patients usually require regular sessions and must follow medical guidance carefully for best results.</p>",
+      "fullContent": "<p>Hemodialysis is a life-saving treatment for patients with kidney failure.</p><p>It removes waste, toxins, and excess fluid from the blood using a dialysis machine when the kidneys can no longer function effectively.</p><p>Patients usually require regular sessions <strong>(usually recommended 3 times per week)</strong>. Each session lasts about 3-4 hours and must follow medical guidance carefully for best results.</p>",
       "readMore": "Read More"
     },
     {
@@ -33,7 +33,7 @@
       "title": "Kidney Transplant: A New Chance at Life",
       "date": "2026-02-10",
       "content": "Kidney transplant offers a second chance at life and greater freedom compared to dialysis...",
-      "fullContent": "<h4>Benefits</h4><ul><li>Restores kidney function and improves quality of life</li><li>Offers more freedom compared to lifelong dialysis</li><li>Allows return to work and daily activities</li></ul><h4>Requirements</h4><ul><li>Strict follow-up care</li><li>Lifelong medications to prevent organ rejection</li><li>Strong support from family and caregivers</li></ul>",
+      "fullContent": "<p>This is the process of replacing a failed kidney with a healthy one from a donor.</p><h4>Benefits</h4><ul><li>Restores kidney function and improves quality of life</li><li>Offers more freedom compared to lifelong dialysis</li><li>Allows return to work and daily activities</li></ul><h4>Requirements</h4><ul><li>Strict follow-up care</li><li>Lifelong medications to prevent organ rejection</li><li>Strong support from family and caregivers</li></ul>",
       "readMore": "Read More"
     },
     {
@@ -42,7 +42,7 @@
       "title": "Why Routine Laboratory Tests Are Important for Kidney Health",
       "date": "2026-02-03",
       "content": "Routine lab tests help detect kidney problems early and monitor overall kidney function...",
-      "fullContent": "<ul><li>Checks how well kidneys are working (creatinine, urea)</li><li>Detects problems early before symptoms appear</li><li>Monitors treatment progress</li><li>Maintains balance of body chemicals (sodium, potassium)</li><li>Reveals hidden damage from hypertension or diabetes</li><li>Guides safe medication use</li></ul>",
+      "fullContent": "<p>The best way to manage kidney health is through regular laboratory tests. Early detection helps to slow its progression from one stage to the next. Regular Laboratory Tests help do the following:</p><ul><li>Checks how well kidneys are working (creatinine, urea)</li><li>Detects problems early before symptoms appear</li><li>Monitors treatment progress</li><li>Maintains balance of body chemicals (sodium, potassium)</li><li>Reveals hidden damage from hypertension or diabetes</li><li>Guides safe medication use</li></ul>",
       "readMore": "Read More"
     },
     {
