@@ -16,7 +16,7 @@
         "Abdominopelvic uss",
         "ECG"
       ],
-      "cost": 129000
+      "cost": 
     },
     {
       "category": "Basic (Female)",
@@ -34,7 +34,7 @@
         "Abdominopelvic uss",
         "ECG"
       ],
-      "cost": 129000
+      "cost": 
     },
     {
       "category": "Standard (Male)",
@@ -57,7 +57,7 @@
         "Abdominopelvic uss",
         "ECG"
       ],
-      "cost": 243500
+      "cost": 
     },
     {
       "category": "Standard (Female)",
@@ -81,7 +81,7 @@
         "ECG",
         "Echocardiogram"
       ],
-      "cost": 193500
+      "cost": 
     },
     {
       "category": "Gold (Male)",
@@ -108,7 +108,7 @@
         "ECG",
         "Echocardiogram"
       ],
-      "cost": 349500
+      "cost": 
     },
     {
       "category": "Gold (Female)",
@@ -139,7 +139,7 @@
         "ECG",
         "Echocardiogram"
       ],
-      "cost": 377500
+      "cost": 
     },
     {
       "category": "Platinum (Male)",
@@ -169,7 +169,7 @@
         "ECG",
         "Echocardiogram"
       ],
-      "cost": 392800
+      "cost": 
     },
     {
       "category": "Platinum (Female)",
@@ -200,7 +200,7 @@
         "ECG",
         "Echocardiogram"
       ],
-      "cost": 474400
+      "cost": 
     },
     {
       "category": "Domestic Staff Screening (Male)",
@@ -212,7 +212,7 @@
         "Serology",
         "Urinalysis"
       ],
-      "cost": 36500
+      "cost": 
     },
     {
       "category": "Domestic Staff Screening (Female)",
@@ -225,7 +225,7 @@
         "Urinalysis",
         "Pregnancy test (optional)"
       ],
-      "cost": 39500
+      "cost": 
     },
     {
       "category": "Basic Pre-Marital Screening (Male)",
@@ -241,7 +241,7 @@
         "Serology",
         "Pregnancy test (optional)"
       ],
-      "cost": 37500
+      "cost": 
     },
     {
       "category": "Kidney Health Screening (Male & Female)",
@@ -255,7 +255,7 @@
         "Serology",
         "Abdominopelvic uss"
       ],
-      "cost": 68500
+      "cost": 
     },
     {
       "category": "Preemployment Healthcheck Package",
@@ -269,7 +269,7 @@
         "Urinalysis",
         "Chest x-ray"
       ],
-      "cost": 75000
+      "cost": 
     }
   ]
 }
