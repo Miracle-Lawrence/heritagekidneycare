@@ -16,7 +16,8 @@
         "Abdominopelvic uss",
         "ECG"
       ],
-      "Cost": "$100"
+      "Cost": "₦129,000"
+
     },
     {
       "category": "Basic (Female)",
@@ -33,7 +34,8 @@
         "Serology",
         "Abdominopelvic uss",
         "ECG"
-      ]
+      ],
+      "Cost": "₦129,000"
     },
     {
       "category": "Standard (Male)",
@@ -55,7 +57,8 @@
         "Prostrate scan",
         "Abdominopelvic uss",
         "ECG"
-      ]
+      ],
+      "Cost": "₦243,500"
     },
     {
       "category": "Standard (Female)",
@@ -78,7 +81,8 @@
         "Mammogram",
         "ECG",
         "Echocardiogram"
-      ]
+      ],
+      "Cost": "₦193,500"
     },
     {
       "category": "Gold (Male)",
@@ -104,7 +108,8 @@
         "Abdominopelvic uss",
         "ECG",
         "Echocardiogram"
-      ]
+      ],
+      "Cost": "₦349,500"
     },
     {
       "category": "Gold (Female)",
@@ -134,7 +139,8 @@
         "Abdominopelvic uss",
         "ECG",
         "Echocardiogram"
-      ]
+      ],
+      "Cost": "₦375,500"
     },
     {
       "category": "Platinum (Male)",
@@ -163,7 +169,8 @@
         "Abdominopelvic uss",
         "ECG",
         "Echocardiogram"
-      ]
+      ],
+      "Cost": "₦392,800"
     },
     {
       "category": "Platinum (Female)",
@@ -193,7 +200,8 @@
         "Mammogram",
         "ECG",
         "Echocardiogram"
-      ]
+      ],
+      "Cost": "₦474,400" 
     },
     {
       "category": "Domestic Staff Screening (Male)",
@@ -204,7 +212,8 @@
         "Stool analysis",
         "Serology",
         "Urinalysis"
-      ]
+      ],
+      "Cost": "₦36,500"
     },
     {
       "category": "Domestic Staff Screening (Female)",
@@ -216,11 +225,13 @@
         "Serology",
         "Urinalysis",
         "Pregnancy test (optional)"
-      ]
+      ],
+      "Cost": "₦39,500"
     },
     {
       "category": "Basic Pre-Marital Screening (Male)",
-      "tests": ["FBC", "Blood group", "Genotype", "Serology"]
+      "tests": ["FBC", "Blood group", "Genotype", "Serology"],
+      "Cost": "₦34,500"
     },
     {
       "category": "Basic Pre-Marital Screening (Female)",
@@ -230,7 +241,8 @@
         "Genotype",
         "Serology",
         "Pregnancy test (optional)"
-      ]
+      ],
+      "Cost": "₦37,500"
     },
     {
       "category": "Kidney Health Screening (Male & Female)",
@@ -243,7 +255,8 @@
         "Malaria parasite test",
         "Serology",
         "Abdominopelvic uss"
-      ]
+      ],
+      "Cost": "₦68,500"
     },
     {
       "category": "Preemployment Healthcheck Package",
@@ -256,7 +269,8 @@
         "Malaria parasite test",
         "Urinalysis",
         "Chest x-ray"
-      ]
+      ],
+      "Cost": "₦75,000"
     }
   ]
 }
