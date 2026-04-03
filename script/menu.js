@@ -43,11 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "Insurance", url: "insurance.html" },
     { name: "Team", url: "team.html" },
     { name: "Research", url: "research.html" },
-    { name: "Testimonials", url: "testimonial.html" },
     { name: "Surgery", url: "surgery.html" },
     { name: "Diagnostics", url: "diagnostics.html" },
     { name: "Dialysis", url: "dialysis.html" },
-    { name: "Technology", url: "technology.html" },
   ];
 
   /* =====================================================

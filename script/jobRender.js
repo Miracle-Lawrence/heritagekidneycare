@@ -5,7 +5,7 @@ export async function renderJobs() {
 
   try {
     // Fetch the jobs JSON
-    const response = await fetch("./json/jobs.json");
+    const response = await fetch("/json/jobs.json");
     if (!response.ok) throw new Error("Failed to load jobs.json");
 
     const jobs = await response.json();

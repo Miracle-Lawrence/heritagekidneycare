@@ -3,7 +3,7 @@ import { initSlider } from "./slider.js";
 import { initNewsletterValidation } from "./validation.js";
 import { renderServices } from "./services.js";
 import { renderArticles } from "./articles.mjs";
-import { renderDoctors } from "./renderDoctors.mjs";
+import { renderDoctors } from "./renderDoctors.js";
 import { initDiagnostics } from './diagnostics.js';
 import { renderJobs } from "./jobRender.js";
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load Testimonials
   async function loadTestimonials() {
     try {
-      const response = await fetch("json/testimonials.json");
+      const response = await fetch("/json/testimonials.json");
 
       if (!response.ok) {
         throw new Error("Failed to load testimonials");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load Services
   async function loadServices() {
     try {
-      const response = await fetch("json/services.json");
+      const response = await fetch("/json/services.json");
 
       if (!response.ok) {
         throw new Error("Failed to load services");
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load Articles
   async function loadArticles() {
     try {
-      const response = await fetch("json/articles.json");
+      const response = await fetch("/json/articles.json");
 
       if (!response.ok) {
         throw new Error("Failed to load articles");

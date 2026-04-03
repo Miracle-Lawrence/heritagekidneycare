@@ -2,7 +2,7 @@ export async function renderDoctors() {
   const doctorsGrid = document.getElementById("doctorsGrid");
 
   try {
-    const response = await fetch("./json/doctors.json");
+    const response = await fetch("/json/doctors.json");
     const doctors = await response.json();
 
     doctorsGrid.innerHTML = doctors

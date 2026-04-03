@@ -1,7 +1,7 @@
 // diagnostics.js
 
 async function fetchDiagnostics() {
-  const res = await fetch("./json/diagnostics.json");
+  const res = await fetch("/json/diagnostics.json");
   const data = await res.json();
   return data.health_check_plans;
 }
