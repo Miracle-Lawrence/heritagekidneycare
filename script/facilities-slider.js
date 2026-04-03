@@ -15,3 +15,39 @@ sliders.forEach((slider) => {
     }, 400);
   }, 5000);
 });
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    const arrow = question.querySelector(".arrow");
+
+    // Close all others
+    document.querySelectorAll(".faq-answer").forEach((item) => {
+      if (item !== answer) {
+        item.style.display = "none";
+      }
+    });
+
+    document.querySelectorAll(".arrow").forEach((arr) => {
+      if (arr !== arrow) {
+        arr.textContent = "▼";
+      }
+    });
+
+    // Toggle current
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      arrow.textContent = "▼";
+    } else {
+      answer.style.display = "block";
+      arrow.textContent = "▲";
+    }
+  });
+});
+
+// Hide all answers initially
+document.querySelectorAll(".faq-answer").forEach((item) => {
+  item.style.display = "none";
+});

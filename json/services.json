@@ -26,7 +26,13 @@
   {
     "image": "images/kidney-diagnostic.webp",
     "name": "Diagnostics",
-    "description": "State-of-the-art diagnostic services designed to detect kidney diseases early and monitor patient health effectively. Our advanced laboratory services support accurate diagnosis, early detection, prevention, and long-term disease management. With on-site laboratory testing, we deliver reliable and timely results to guide effective treatment decisions. To combat kidney failure, early detection is essential — which is why our laboratory unit offers essential routine tests to identify early signs of kidney disease and ensure proactive patient care. Below are some vital routine tests.",
+    "description": "State-of-the-art diagnostic services designed to detect kidney diseases early and monitor patient health effectively. Our advanced laboratory services support accurate diagnosis, early detection, prevention, and long-term disease management. With on-site laboratory testing, we deliver reliable and timely results to guide effective treatment decisions. To combat kidney failure, early detection is essential — which is why our laboratory unit offers essential routine tests to identify early signs of kidney disease and ensure proactive patient care.",
+    "button": "Show More"
+  },
+  {
+    "image": "images/radiology-service.webp",
+    "name": "Radiology",
+    "description": "Advanced imaging services that support accurate diagnosis and effective treatment planning. Our radiology unit is equipped with modern technology and experienced specialists to deliver high-quality imaging results. Services include Abdomino Pelvic Scan, ECHO Cardiography, ECG (Electro Cardio Gram), and Colonoscopy, ensuring comprehensive evaluation and timely medical intervention.",
     "button": "Show More"
   },
   {
@@ -60,9 +66,9 @@
     "button": "Show More"
   },
   {
-  "image": "images/specialist-consultations.webp",
-  "name": "Specialist Consultations",
-  "description": "Chronic Kidney Disease unlocks a host of other health challenges. Our team encompasses leading experts across multiple specialties to provide comprehensive care:\n\nNephrology Consultation – Advanced kidney care and management.\nUrology Consultation – Urinary tract and male reproductive health care.\nOncology Consultation – Cancer care and treatment guidance.\nCardiology Consultation – Heart health and cardiovascular wellness.",
-  "button": "Show More"
-}
+    "image": "images/specialist-consultations.webp",
+    "name": "Specialist Consultations",
+    "description": "Chronic Kidney Disease unlocks a host of other health challenges. Our team encompasses leading experts across multiple specialties to provide comprehensive care:\n\nNephrology Consultation – Advanced kidney care and management.\nUrology Consultation – Urinary tract and male reproductive health care.\nOncology Consultation – Cancer care and treatment guidance.\nCardiology Consultation – Heart health and cardiovascular wellness.",
+    "button": "Show More"
+  }
 ]
