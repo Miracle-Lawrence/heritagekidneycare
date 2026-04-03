@@ -2,7 +2,7 @@ import { renderTestimonials } from "./render.js";
 import { initSlider } from "./slider.js";
 import { initNewsletterValidation } from "./validation.js";
 import { renderServices } from "./services.js";
-import { renderArticles } from "./articles.mjs";
+import { renderArticles } from "./articles.js";
 import { renderDoctors } from "./renderDoctors.js";
 import { initDiagnostics } from './diagnostics.js';
 import { renderJobs } from "./jobRender.js";
