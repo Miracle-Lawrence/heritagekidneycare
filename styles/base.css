@@ -5183,19 +5183,19 @@ insurance-section {
 /* GENERAL SECTION STYLING */
 /* ========================= */
 
-section {
+.special-section {
   max-width: 900px;
   margin: 40px auto; /* centers horizontally */
   padding: 20px;
 }
 
 /* Center headings nicely */
-section h2 {
+.special-section h2 {
   text-align: center;
   color: var(--color-dark-red);
 }
 
-section p{
+.special-section p{
   text-align: center;
   color: #444;
 }
@@ -5208,6 +5208,7 @@ section p{
   width: 100%;
   margin: 0 auto;
   text-align: left; /* keep questions readable */
+  color: var(--color-olive-green);
 }
 
 /* ========================= */
@@ -5265,6 +5266,7 @@ section p{
   padding: 0 10px 15px 10px;
   color: #444;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* ========================= */
@@ -5278,7 +5280,8 @@ section button {
   color: #fff;
   cursor: pointer;
   font-size: 15px;
-  border-radius: 4px;
+  font-weight: 600;
+  border-radius: 40px;
   transition: background 0.3s ease;
 }
 
