@@ -5289,6 +5289,162 @@ section button:hover {
   background: #550000;
 }
 
+/* SECTION BACKGROUND */
+.kidney-foundation-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* TEXT SIDE */
+.kf-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.kf-text h2 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.kf-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* BUTTONS */
+.kf-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  color: #000;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.4);
+}
+
+/* SECONDARY BUTTON */
+.btn.secondary {
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* RIGHT CARD */
+.kf-card {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* CARD TITLE */
+.card-content h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+/* DONATION BLOCKS */
+.donation-block {
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.donation-block p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.donation-block span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* FULL BUTTON */
+.btn.full {
+  display: block;
+  margin-top: 20px;
+  background: #22c55e;
+  color: #fff;
+  padding: 14px;
+}
+
+.btn.full:hover {
+  background: #16a34a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .kf-text h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kf-actions {
+    justify-content: center;
+  }
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
