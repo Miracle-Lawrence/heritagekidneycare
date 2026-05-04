@@ -5289,16 +5289,16 @@ section button:hover {
   background: #550000;
 }
 
-/* SECTION BACKGROUND */
-.kidney-foundation-section {
+/* SECTION */
+.fnh-kidney-section {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  background: linear-gradient(135deg, rgb(2, 19, 59), #0f0f0f);
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* CONTAINER */
-.container {
+/* WRAPPER */
+.fnh-kidney-wrapper {
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -5308,26 +5308,26 @@ section button:hover {
   flex-wrap: wrap;
 }
 
-/* TEXT SIDE */
-.kf-text {
+/* TEXT */
+.fnh-kidney-text {
   flex: 1;
   min-width: 300px;
 }
 
-.kf-text h2 {
+.fnh-kidney-text h2 {
   font-size: 2.5rem;
   margin: 15px 0;
   font-weight: 700;
 }
 
-.kf-text p {
+.fnh-kidney-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   opacity: 0.9;
 }
 
 /* BADGE */
-.badge {
+.fnh-kidney-badge {
   display: inline-block;
   background: rgba(255,255,255,0.1);
   padding: 6px 12px;
@@ -5336,88 +5336,89 @@ section button:hover {
   letter-spacing: 1px;
 }
 
-/* BUTTONS */
-.kf-actions {
+/* BUTTON GROUP */
+.fnh-kidney-actions {
   margin-top: 25px;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.btn {
+/* BUTTON BASE */
+.fnh-btn {
   text-decoration: none;
   padding: 12px 22px;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
-/* PRIMARY BUTTON */
-.btn.primary {
+/* PRIMARY */
+.fnh-btn-primary {
   background: linear-gradient(135deg, #facc15, #f59e0b);
   color: #000;
 }
 
-.btn.primary:hover {
+.fnh-btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(250, 204, 21, 0.4);
 }
 
-/* SECONDARY BUTTON */
-.btn.secondary {
+/* SECONDARY */
+.fnh-btn-secondary {
   border: 1px solid rgba(255,255,255,0.3);
   color: #fff;
 }
 
-.btn.secondary:hover {
+.fnh-btn-secondary:hover {
   background: rgba(255,255,255,0.1);
 }
 
-/* RIGHT CARD */
-.kf-card {
+/* CARD */
+.fnh-kidney-card {
   flex: 1;
   min-width: 280px;
   display: flex;
   justify-content: center;
 }
 
-.card-content {
+.fnh-kidney-card-inner {
   width: 100%;
   max-width: 350px;
   padding: 30px;
   border-radius: 16px;
   background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(12px);
   box-shadow: 0 10px 40px rgba(0,0,0,0.3);
   text-align: center;
 }
 
-/* CARD TITLE */
-.card-content h3 {
+/* TITLE */
+.fnh-kidney-card-inner h3 {
   margin-bottom: 20px;
   font-size: 1.4rem;
 }
 
-/* DONATION BLOCKS */
-.donation-block {
+/* DONATION BOX */
+.fnh-donation-box {
   background: rgba(255,255,255,0.05);
   padding: 12px;
   border-radius: 10px;
   margin-bottom: 12px;
 }
 
-.donation-block p {
+.fnh-donation-box p {
   margin: 0;
   font-size: 0.95rem;
 }
 
-.donation-block span {
+.fnh-donation-box span {
   font-weight: bold;
   font-size: 1rem;
 }
 
 /* FULL BUTTON */
-.btn.full {
+.fnh-btn-full {
   display: block;
   margin-top: 20px;
   background: #22c55e;
@@ -5425,22 +5426,22 @@ section button:hover {
   padding: 14px;
 }
 
-.btn.full:hover {
+.fnh-btn-full:hover {
   background: #16a34a;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .kf-text h2 {
+  .fnh-kidney-text h2 {
     font-size: 2rem;
   }
 
-  .container {
+  .fnh-kidney-wrapper {
     flex-direction: column;
     text-align: center;
   }
 
-  .kf-actions {
+  .fnh-kidney-actions {
     justify-content: center;
   }
 }
